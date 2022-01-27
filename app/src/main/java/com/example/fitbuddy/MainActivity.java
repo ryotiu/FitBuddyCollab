@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(loginIntent);
     }
 
+    //Test
     public void openRegister() {
         Intent registerIntent = new Intent(this, Register.class);
         startActivity(registerIntent);

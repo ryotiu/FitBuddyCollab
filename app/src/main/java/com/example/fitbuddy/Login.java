@@ -13,8 +13,8 @@ public class Login extends AppCompatActivity {
 
     private EditText loginEmail, loginPassword;
     private TextView noAccount, forgotPassword;
-    private Button registerBtn;
-    private FirebaseAuth mAuth;
+    private Button loginBtn;
+    private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,11 +22,11 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         loginEmail = (EditText) findViewById(R.id.LoginEmail);
-        loginPassword = (EditText) findViewById(R.id.LoginPasswd);
+        loginPassword = (EditText) findViewById(R.id.LoginPassword);
         noAccount = (TextView) findViewById(R.id.NoAccount);
         forgotPassword = (TextView) findViewById(R.id.ForgotPassword);
-        registerBtn = (Button) findViewById(R.id.LoginBtn);
+        loginBtn = (Button) findViewById(R.id.LoginBtn);
 
-        mAuth = FirebaseAuth.getInstance();
+        firebaseAuth = FirebaseAuth.getInstance();
     }
 }

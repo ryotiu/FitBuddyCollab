@@ -22,7 +22,7 @@ public class Register extends AppCompatActivity {
     private EditText firstName, lastName, registerEmail, registerPassWD, birthday, currentWeight, targetwWeight;
     private Button registerBtn;
 
-    private FirebaseAuth mAuth;
+    private FirebaseAuth firebaseAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,7 @@ public class Register extends AppCompatActivity {
 
         registerBtn = (Button) findViewById(R.id.RegisterBtn);
 
-        mAuth = FirebaseAuth.getInstance();
+        firebaseAuth = FirebaseAuth.getInstance();
 
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,7 +60,7 @@ public class Register extends AppCompatActivity {
 
         if(!rEmail.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(rEmail).matches()){
             if(!rPassword.isEmpty()){
-                mAuth.createUserWithEmailAndPassword(rEmail, rPassword)
+                firebaseAuth.createUserWithEmailAndPassword(rEmail, rPassword)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {

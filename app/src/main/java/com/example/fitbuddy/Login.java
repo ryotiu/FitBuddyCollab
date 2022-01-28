@@ -6,10 +6,13 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class Login extends AppCompatActivity {
 
     private EditText loginEmail, loginPasswd;
     private Button registerBtn;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

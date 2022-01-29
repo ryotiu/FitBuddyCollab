@@ -9,6 +9,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -21,6 +22,7 @@ public class Register extends AppCompatActivity {
 
     private EditText firstName, lastName, registerEmail, registerPassWD, birthday, currentWeight, targetwWeight;
     private Button registerBtn;
+    private TextView haveAccount;
 
     private FirebaseAuth firebaseAuth;
 
@@ -36,10 +38,18 @@ public class Register extends AppCompatActivity {
         birthday = (EditText) findViewById(R.id.Birthday);
         currentWeight = (EditText) findViewById(R.id.CurrentWeight);
         targetwWeight = (EditText) findViewById(R.id.TargetWeight);
+        haveAccount = (TextView) findViewById(R.id.HaveAccount);
 
         registerBtn = (Button) findViewById(R.id.RegisterBtn);
 
         firebaseAuth = FirebaseAuth.getInstance();
+
+        haveAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Register.this, Login.class));
+            }
+        });
 
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -12,11 +12,6 @@
         <activity
             android:name=".LoggedIn"
             android:exported="false" />
-        <activity
-            android:name=".Loggedin"
-            android:exported="false"
-            android:label="@string/title_activity_loggedin"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Register" />
         <activity android:name=".Login" />
         <activity android:name=".MainActivity">

@@ -19,7 +19,7 @@ public class LoggedIn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logged_in);
 
-        LogoutBtn = findViewById(R.id.LoginBtn);
+        LogoutBtn = findViewById(R.id.LogoutBtn);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -31,6 +31,7 @@ public class LoggedIn extends AppCompatActivity {
                 finish();
             }
         });
+
     }
 
 }

@@ -42,7 +42,6 @@ public class LoggedIn extends AppCompatActivity {
                 finish();
             }
         });
-
     }
 
 }

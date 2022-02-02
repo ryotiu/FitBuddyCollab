@@ -11,6 +11,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class LoggedIn extends AppCompatActivity {
 
+    private Button TrackersBtn;
     private Button LogoutBtn;
     private FirebaseAuth firebaseAuth;
 
@@ -19,9 +20,19 @@ public class LoggedIn extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logged_in);
 
+        TrackersBtn = findViewById(R.id.TrackersBtn);
         LogoutBtn = findViewById(R.id.LogoutBtn);
 
         firebaseAuth = FirebaseAuth.getInstance();
+
+        // Launch activity_trackers
+        TrackersBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoggedIn.this, Trackers.class));
+                finish();
+            }
+        });
 
         LogoutBtn.setOnClickListener(new View.OnClickListener() {
             @Override

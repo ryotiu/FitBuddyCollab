@@ -25,7 +25,6 @@ public class Trackers extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Trackers.this, WeeklyTracker.class));
-                finish();
             }
         });
 
@@ -34,7 +33,6 @@ public class Trackers extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Trackers.this, MonthlyTracker.class));
-                finish();
             }
         });
 

@@ -30,7 +30,6 @@ public class LoggedIn extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(LoggedIn.this, Trackers.class));
-                finish();
             }
         });
 

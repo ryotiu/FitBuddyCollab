@@ -21,7 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class Register extends AppCompatActivity {
+public class Register<FirebaseDatabase, DatabaseReference> extends AppCompatActivity {
 
     private EditText firstName, lastName, registerEmail, registerPassWD, birthday, currentWeight, targetwWeight;
     private Button registerBtn;

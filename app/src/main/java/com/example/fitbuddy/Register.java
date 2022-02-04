@@ -18,6 +18,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Register extends AppCompatActivity {
 
@@ -26,6 +28,8 @@ public class Register extends AppCompatActivity {
     private TextView haveAccount;
 
     private FirebaseAuth firebaseAuth;
+    private FirebaseDatabase root;
+    private DatabaseReference ref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +67,10 @@ public class Register extends AppCompatActivity {
     }
 
     private void createUser(){
+
+        root = FirebaseDatabase.getInstance();
+        ref = root.getReference("Users");
+
         String fName = firstName.getText().toString();
         String lName = lastName.getText().toString();
         String rEmail = registerEmail.getText().toString();
@@ -71,12 +79,17 @@ public class Register extends AppCompatActivity {
         String rCWeight = currentWeight.getText().toString();
         String rTWeight = targetwWeight.getText().toString();
 
+        UserClass User = new UserClass(fName, lName, rEmail, rPassword, rBirthday, rCWeight, rTWeight);
+
         if(!rEmail.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(rEmail).matches()){
             if(!rPassword.isEmpty()){
                 firebaseAuth.createUserWithEmailAndPassword(rEmail, rPassword)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
+                                String[] splitEmail = rEmail.split("@");
+                                String username = splitEmail[0];
+                                ref.child(username).setValue(User);
                                 Toast.makeText(Register.this, "Successfully Registered User", Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(Register.this, Login.class));
                                 finish();

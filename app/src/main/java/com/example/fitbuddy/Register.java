@@ -21,7 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class Register<FirebaseDatabase, DatabaseReference> extends AppCompatActivity {
+public class Register extends AppCompatActivity {
 
     private EditText firstName, lastName, registerEmail, registerPassWD, birthday, currentWeight, targetwWeight;
     private Button registerBtn;
@@ -46,8 +46,6 @@ public class Register<FirebaseDatabase, DatabaseReference> extends AppCompatActi
         haveAccount = (TextView) findViewById(R.id.HaveAccount);
 
         registerBtn = (Button) findViewById(R.id.RegisterBtn);
-
-       // FirebaseApp.initializeApp(this);
 
         firebaseAuth = FirebaseAuth.getInstance();
 

@@ -12,6 +12,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LoggedIn extends AppCompatActivity {
 
     private Button TrackersBtn;
+    private Button ChallengesBtn;
     private Button LogoutBtn;
     private FirebaseAuth firebaseAuth;
 
@@ -21,6 +22,7 @@ public class LoggedIn extends AppCompatActivity {
         setContentView(R.layout.activity_logged_in);
 
         TrackersBtn = findViewById(R.id.TrackersBtn);
+        ChallengesBtn = findViewById(R.id.ChallengesBtn);
         LogoutBtn = findViewById(R.id.LogoutBtn);
 
         firebaseAuth = FirebaseAuth.getInstance();
@@ -30,6 +32,14 @@ public class LoggedIn extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(LoggedIn.this, Trackers.class));
+            }
+        });
+
+        // Launch activity_challenges AndroidManifest.xml
+        ChallengesBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoggedIn.this, Challenges.class));
             }
         });
 

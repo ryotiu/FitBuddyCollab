@@ -18,15 +18,16 @@
         <activity android:name=".WeeklyTracker" />
         <activity android:name=".MonthlyTracker" />
         <activity android:name=".Challenges" >
+
+        </activity>
+        <activity android:name=".WeeklyChallenges" />
+        <activity android:name=".MonthlyChallenges" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".WeeklyChallenges" />
-        <activity android:name=".MonthlyChallenges" />
-        <activity android:name=".MainActivity">
 
         </activity>
     </application>

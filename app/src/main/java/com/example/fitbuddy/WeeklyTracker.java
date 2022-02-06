@@ -2,6 +2,7 @@ package com.example.fitbuddy;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -266,6 +267,161 @@ public class WeeklyTracker extends AppCompatActivity {
             }
         });
 
+        // Set On Click Listener for TuesdayAerobicCheckbox
+        TuesdayAerobicCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((TuesdayAerobicCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 0) || (TuesdayAerobicCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 40)){
+                    TuesdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((TuesdayAerobicCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 20) || (TuesdayAerobicCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 60)){
+                    TuesdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((TuesdayAerobicCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 40) || (TuesdayAerobicCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 80)){
+                    TuesdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((TuesdayAerobicCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 60) || (TuesdayAerobicCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 100)){
+                    TuesdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (TuesdayAerobicCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 80){
+                    TuesdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    TuesdayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for TuesdayCircuitCheckbox
+        TuesdayCircuitCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((TuesdayCircuitCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 0) || (TuesdayCircuitCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 40)){
+                    TuesdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((TuesdayCircuitCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 20) || (TuesdayCircuitCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 60)){
+                    TuesdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((TuesdayCircuitCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 40) || (TuesdayCircuitCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 80)){
+                    TuesdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((TuesdayCircuitCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 60) || (TuesdayCircuitCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 100)){
+                    TuesdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (TuesdayCircuitCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 80){
+                    TuesdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    TuesdayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for TuesdayIntervalCheckbox
+        TuesdayIntervalCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((TuesdayIntervalCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 0) || (TuesdayIntervalCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 40)){
+                    TuesdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((TuesdayIntervalCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 20) || (TuesdayIntervalCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 60)){
+                    TuesdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((TuesdayIntervalCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 40) || (TuesdayIntervalCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 80)){
+                    TuesdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((TuesdayIntervalCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 60) || (TuesdayIntervalCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 100)){
+                    TuesdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (TuesdayIntervalCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 80){
+                    TuesdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    TuesdayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for TuesdayFlexibilityCheckbox
+        TuesdayFlexibilityCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((TuesdayFlexibilityCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 0) || (TuesdayFlexibilityCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 40)){
+                    TuesdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((TuesdayFlexibilityCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 20) || (TuesdayFlexibilityCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 60)){
+                    TuesdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((TuesdayFlexibilityCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 40) || (TuesdayFlexibilityCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 80)){
+                    TuesdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((TuesdayFlexibilityCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 60) || (TuesdayFlexibilityCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 100)){
+                    TuesdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (TuesdayFlexibilityCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 80){
+                    TuesdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    TuesdayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for TuesdayChallengesCheckbox
+        TuesdayChallengesCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((TuesdayChallengesCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 0) || (TuesdayChallengesCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 40)){
+                    TuesdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((TuesdayChallengesCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 20) || (TuesdayChallengesCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 60)){
+                    TuesdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((TuesdayChallengesCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 40) || (TuesdayChallengesCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 80)){
+                    TuesdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((TuesdayChallengesCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 60) || (TuesdayChallengesCheckbox.isChecked() == false && TuesdayProgressBar.getProgress() == 100)){
+                    TuesdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (TuesdayChallengesCheckbox.isChecked() && TuesdayProgressBar.getProgress() == 80){
+                    TuesdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    TuesdayProgressBar.setProgress(0);
+                }
+            }
+        });
+
         // Find Wednesday Contents
         WednesdayTextView = findViewById(R.id.WednesdayTextView);
         WednesdayProgressBar = findViewById(R.id.WednesdayProgressBar);
@@ -305,6 +461,161 @@ public class WeeklyTracker extends AppCompatActivity {
                 // Set Wednesday Contents' Visibility to Visible
                 else  {
                     SetContentsToVisible();
+                }
+            }
+        });
+
+        // Set On Click Listener for WednesdayAerobicCheckbox
+        WednesdayAerobicCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((WednesdayAerobicCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 0) || (WednesdayAerobicCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 40)){
+                    WednesdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((WednesdayAerobicCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 20) || (WednesdayAerobicCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 60)){
+                    WednesdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((WednesdayAerobicCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 40) || (WednesdayAerobicCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 80)){
+                    WednesdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((WednesdayAerobicCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 60) || (WednesdayAerobicCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 100)){
+                    WednesdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (WednesdayAerobicCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 80){
+                    WednesdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    WednesdayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for WednesdayCircuitCheckbox
+        WednesdayCircuitCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((WednesdayCircuitCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 0) || (WednesdayCircuitCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 40)){
+                    WednesdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((WednesdayCircuitCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 20) || (WednesdayCircuitCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 60)){
+                    WednesdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((WednesdayCircuitCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 40) || (WednesdayCircuitCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 80)){
+                    WednesdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((WednesdayCircuitCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 60) || (WednesdayCircuitCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 100)){
+                    WednesdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (WednesdayCircuitCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 80){
+                    WednesdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    WednesdayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for WednesdayIntervalCheckbox
+        WednesdayIntervalCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((WednesdayIntervalCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 0) || (WednesdayIntervalCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 40)){
+                    WednesdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((WednesdayIntervalCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 20) || (WednesdayIntervalCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 60)){
+                    WednesdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((WednesdayIntervalCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 40) || (WednesdayIntervalCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 80)){
+                    WednesdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((WednesdayIntervalCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 60) || (WednesdayIntervalCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 100)){
+                    WednesdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (WednesdayIntervalCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 80){
+                    WednesdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    WednesdayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for WednesdayFlexibilityCheckbox
+        WednesdayFlexibilityCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((WednesdayFlexibilityCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 0) || (WednesdayFlexibilityCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 40)){
+                    WednesdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((WednesdayFlexibilityCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 20) || (WednesdayFlexibilityCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 60)){
+                    WednesdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((WednesdayFlexibilityCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 40) || (WednesdayFlexibilityCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 80)){
+                    WednesdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((WednesdayFlexibilityCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 60) || (WednesdayFlexibilityCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 100)){
+                    WednesdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (WednesdayFlexibilityCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 80){
+                    WednesdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    WednesdayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for WednesdayChallengesCheckbox
+        WednesdayChallengesCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((WednesdayChallengesCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 0) || (WednesdayChallengesCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 40)){
+                    WednesdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((WednesdayChallengesCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 20) || (WednesdayChallengesCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 60)){
+                    WednesdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((WednesdayChallengesCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 40) || (WednesdayChallengesCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 80)){
+                    WednesdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((WednesdayChallengesCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 60) || (WednesdayChallengesCheckbox.isChecked() == false && WednesdayProgressBar.getProgress() == 100)){
+                    WednesdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (WednesdayChallengesCheckbox.isChecked() && WednesdayProgressBar.getProgress() == 80){
+                    WednesdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    WednesdayProgressBar.setProgress(0);
                 }
             }
         });
@@ -352,6 +663,161 @@ public class WeeklyTracker extends AppCompatActivity {
             }
         });
 
+        // Set On Click Listener for ThursdayAerobicCheckbox
+        ThursdayAerobicCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((ThursdayAerobicCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 0) || (ThursdayAerobicCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 40)){
+                    ThursdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((ThursdayAerobicCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 20) || (ThursdayAerobicCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 60)){
+                    ThursdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((ThursdayAerobicCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 40) || (ThursdayAerobicCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 80)){
+                    ThursdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((ThursdayAerobicCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 60) || (ThursdayAerobicCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 100)){
+                    ThursdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (ThursdayAerobicCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 80){
+                    ThursdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    ThursdayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for ThursdayCircuitCheckbox
+        ThursdayCircuitCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((ThursdayCircuitCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 0) || (ThursdayCircuitCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 40)){
+                    ThursdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((ThursdayCircuitCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 20) || (ThursdayCircuitCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 60)){
+                    ThursdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((ThursdayCircuitCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 40) || (ThursdayCircuitCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 80)){
+                    ThursdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((ThursdayCircuitCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 60) || (ThursdayCircuitCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 100)){
+                    ThursdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (ThursdayCircuitCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 80){
+                    ThursdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    ThursdayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for ThursdayIntervalCheckbox
+        ThursdayIntervalCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((ThursdayIntervalCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 0) || (ThursdayIntervalCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 40)){
+                    ThursdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((ThursdayIntervalCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 20) || (ThursdayIntervalCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 60)){
+                    ThursdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((ThursdayIntervalCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 40) || (ThursdayIntervalCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 80)){
+                    ThursdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((ThursdayIntervalCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 60) || (ThursdayIntervalCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 100)){
+                    ThursdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (ThursdayIntervalCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 80){
+                    ThursdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    ThursdayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for ThursdayFlexibilityCheckbox
+        ThursdayFlexibilityCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((ThursdayFlexibilityCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 0) || (ThursdayFlexibilityCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 40)){
+                    ThursdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((ThursdayFlexibilityCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 20) || (ThursdayFlexibilityCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 60)){
+                    ThursdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((ThursdayFlexibilityCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 40) || (ThursdayFlexibilityCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 80)){
+                    ThursdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((ThursdayFlexibilityCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 60) || (ThursdayFlexibilityCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 100)){
+                    ThursdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (ThursdayFlexibilityCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 80){
+                    ThursdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    ThursdayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for ThursdayChallengesCheckbox
+        ThursdayChallengesCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((ThursdayChallengesCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 0) || (ThursdayChallengesCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 40)){
+                    ThursdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((ThursdayChallengesCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 20) || (ThursdayChallengesCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 60)){
+                    ThursdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((ThursdayChallengesCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 40) || (ThursdayChallengesCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 80)){
+                    ThursdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((ThursdayChallengesCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 60) || (ThursdayChallengesCheckbox.isChecked() == false && ThursdayProgressBar.getProgress() == 100)){
+                    ThursdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (ThursdayChallengesCheckbox.isChecked() && ThursdayProgressBar.getProgress() == 80){
+                    ThursdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    ThursdayProgressBar.setProgress(0);
+                }
+            }
+        });
+
         // Find Friday Contents
         FridayTextView = findViewById(R.id.FridayTextView);
         FridayProgressBar = findViewById(R.id.FridayProgressBar);
@@ -391,6 +857,161 @@ public class WeeklyTracker extends AppCompatActivity {
                 // Set Friday Contents' Visibility to Visible
                 else  {
                     SetContentsToVisible();
+                }
+            }
+        });
+
+        // Set On Click Listener for FridayAerobicCheckbox
+        FridayAerobicCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((FridayAerobicCheckbox.isChecked() && FridayProgressBar.getProgress() == 0) || (FridayAerobicCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 40)){
+                    FridayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((FridayAerobicCheckbox.isChecked() && FridayProgressBar.getProgress() == 20) || (FridayAerobicCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 60)){
+                    FridayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((FridayAerobicCheckbox.isChecked() && FridayProgressBar.getProgress() == 40) || (FridayAerobicCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 80)){
+                    FridayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((FridayAerobicCheckbox.isChecked() && FridayProgressBar.getProgress() == 60) || (FridayAerobicCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 100)){
+                    FridayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (FridayAerobicCheckbox.isChecked() && FridayProgressBar.getProgress() == 80){
+                    FridayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    FridayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for FridayCircuitCheckbox
+        FridayCircuitCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((FridayCircuitCheckbox.isChecked() && FridayProgressBar.getProgress() == 0) || (FridayCircuitCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 40)){
+                    FridayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((FridayCircuitCheckbox.isChecked() && FridayProgressBar.getProgress() == 20) || (FridayCircuitCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 60)){
+                    FridayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((FridayCircuitCheckbox.isChecked() && FridayProgressBar.getProgress() == 40) || (FridayCircuitCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 80)){
+                    FridayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((FridayCircuitCheckbox.isChecked() && FridayProgressBar.getProgress() == 60) || (FridayCircuitCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 100)){
+                    FridayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (FridayCircuitCheckbox.isChecked() && FridayProgressBar.getProgress() == 80){
+                    FridayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    FridayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for FridayIntervalCheckbox
+        FridayIntervalCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((FridayIntervalCheckbox.isChecked() && FridayProgressBar.getProgress() == 0) || (FridayIntervalCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 40)){
+                    FridayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((FridayIntervalCheckbox.isChecked() && FridayProgressBar.getProgress() == 20) || (FridayIntervalCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 60)){
+                    FridayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((FridayIntervalCheckbox.isChecked() && FridayProgressBar.getProgress() == 40) || (FridayIntervalCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 80)){
+                    FridayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((FridayIntervalCheckbox.isChecked() && FridayProgressBar.getProgress() == 60) || (FridayIntervalCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 100)){
+                    FridayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (FridayIntervalCheckbox.isChecked() && FridayProgressBar.getProgress() == 80){
+                    FridayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    FridayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for FridayFlexibilityCheckbox
+        FridayFlexibilityCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((FridayFlexibilityCheckbox.isChecked() && FridayProgressBar.getProgress() == 0) || (FridayFlexibilityCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 40)){
+                    FridayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((FridayFlexibilityCheckbox.isChecked() && FridayProgressBar.getProgress() == 20) || (FridayFlexibilityCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 60)){
+                    FridayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((FridayFlexibilityCheckbox.isChecked() && FridayProgressBar.getProgress() == 40) || (FridayFlexibilityCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 80)){
+                    FridayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((FridayFlexibilityCheckbox.isChecked() && FridayProgressBar.getProgress() == 60) || (FridayFlexibilityCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 100)){
+                    FridayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (FridayFlexibilityCheckbox.isChecked() && FridayProgressBar.getProgress() == 80){
+                    FridayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    FridayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for FridayChallengesCheckbox
+        FridayChallengesCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((FridayChallengesCheckbox.isChecked() && FridayProgressBar.getProgress() == 0) || (FridayChallengesCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 40)){
+                    FridayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((FridayChallengesCheckbox.isChecked() && FridayProgressBar.getProgress() == 20) || (FridayChallengesCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 60)){
+                    FridayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((FridayChallengesCheckbox.isChecked() && FridayProgressBar.getProgress() == 40) || (FridayChallengesCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 80)){
+                    FridayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((FridayChallengesCheckbox.isChecked() && FridayProgressBar.getProgress() == 60) || (FridayChallengesCheckbox.isChecked() == false && FridayProgressBar.getProgress() == 100)){
+                    FridayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (FridayChallengesCheckbox.isChecked() && FridayProgressBar.getProgress() == 80){
+                    FridayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    FridayProgressBar.setProgress(0);
                 }
             }
         });
@@ -438,6 +1059,161 @@ public class WeeklyTracker extends AppCompatActivity {
             }
         });
 
+        // Set On Click Listener for SaturdayAerobicCheckbox
+        SaturdayAerobicCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((SaturdayAerobicCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 0) || (SaturdayAerobicCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 40)){
+                    SaturdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((SaturdayAerobicCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 20) || (SaturdayAerobicCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 60)){
+                    SaturdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((SaturdayAerobicCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 40) || (SaturdayAerobicCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 80)){
+                    SaturdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((SaturdayAerobicCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 60) || (SaturdayAerobicCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 100)){
+                    SaturdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (SaturdayAerobicCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 80){
+                    SaturdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    SaturdayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for FridayCircuitCheckbox
+        SaturdayCircuitCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((SaturdayCircuitCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 0) || (SaturdayCircuitCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 40)){
+                    SaturdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((SaturdayCircuitCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 20) || (SaturdayCircuitCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 60)){
+                    SaturdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((SaturdayCircuitCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 40) || (SaturdayCircuitCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 80)){
+                    SaturdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((SaturdayCircuitCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 60) || (SaturdayCircuitCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 100)){
+                    SaturdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (SaturdayCircuitCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 80){
+                    SaturdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    SaturdayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for SaturdayIntervalCheckbox
+        SaturdayIntervalCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((SaturdayIntervalCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 0) || (SaturdayIntervalCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 40)){
+                    SaturdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((SaturdayIntervalCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 20) || (SaturdayIntervalCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 60)){
+                    SaturdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((SaturdayIntervalCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 40) || (SaturdayIntervalCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 80)){
+                    SaturdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((SaturdayIntervalCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 60) || (SaturdayIntervalCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 100)){
+                    SaturdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (SaturdayIntervalCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 80){
+                    SaturdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    SaturdayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for SaturdayFlexibilityCheckbox
+        SaturdayFlexibilityCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((SaturdayFlexibilityCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 0) || (SaturdayFlexibilityCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 40)){
+                    SaturdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((SaturdayFlexibilityCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 20) || (SaturdayFlexibilityCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 60)){
+                    SaturdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((SaturdayFlexibilityCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 40) || (SaturdayFlexibilityCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 80)){
+                    SaturdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((SaturdayFlexibilityCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 60) || (SaturdayFlexibilityCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 100)){
+                    SaturdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (SaturdayFlexibilityCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 80){
+                    SaturdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    SaturdayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for SaturdayChallengesCheckbox
+        SaturdayChallengesCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((SaturdayChallengesCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 0) || (SaturdayChallengesCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 40)){
+                    SaturdayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((SaturdayChallengesCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 20) || (SaturdayChallengesCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 60)){
+                    SaturdayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((SaturdayChallengesCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 40) || (SaturdayChallengesCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 80)){
+                    SaturdayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((SaturdayChallengesCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 60) || (SaturdayChallengesCheckbox.isChecked() == false && SaturdayProgressBar.getProgress() == 100)){
+                    SaturdayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (SaturdayChallengesCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 80){
+                    SaturdayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    SaturdayProgressBar.setProgress(0);
+                }
+            }
+        });
+
         // Find Sunday Contents
         SundayTextView = findViewById(R.id.SundayTextView);
         SundayProgressBar = findViewById(R.id.SundayProgressBar);
@@ -480,6 +1256,162 @@ public class WeeklyTracker extends AppCompatActivity {
                 }
             }
         });
+
+        // Set On Click Listener for SundayAerobicCheckbox
+        SundayAerobicCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((SundayAerobicCheckbox.isChecked() && SundayProgressBar.getProgress() == 0) || (SundayAerobicCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 40)){
+                    SundayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((SundayAerobicCheckbox.isChecked() && SundayProgressBar.getProgress() == 20) || (SundayAerobicCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 60)){
+                    SundayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((SundayAerobicCheckbox.isChecked() && SundayProgressBar.getProgress() == 40) || (SundayAerobicCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 80)){
+                    SundayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((SundayAerobicCheckbox.isChecked() && SundayProgressBar.getProgress() == 60) || (SundayAerobicCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 100)){
+                    SundayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (SundayAerobicCheckbox.isChecked() && SundayProgressBar.getProgress() == 80){
+                    SundayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    SundayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for SundayCircuitCheckbox
+        SundayCircuitCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((SundayCircuitCheckbox.isChecked() && SundayProgressBar.getProgress() == 0) || (SundayCircuitCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 40)){
+                    SundayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((SundayCircuitCheckbox.isChecked() && SundayProgressBar.getProgress() == 20) || (SundayCircuitCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 60)){
+                    SundayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((SundayCircuitCheckbox.isChecked() && SundayProgressBar.getProgress() == 40) || (SundayCircuitCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 80)){
+                    SundayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((SundayCircuitCheckbox.isChecked() && SundayProgressBar.getProgress() == 60) || (SundayCircuitCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 100)){
+                    SundayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (SundayCircuitCheckbox.isChecked() && SundayProgressBar.getProgress() == 80){
+                    SundayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    SundayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for SundayIntervalCheckbox
+        SundayIntervalCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((SundayIntervalCheckbox.isChecked() && SundayProgressBar.getProgress() == 0) || (SundayIntervalCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 40)){
+                    SundayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((SundayIntervalCheckbox.isChecked() && SundayProgressBar.getProgress() == 20) || (SundayIntervalCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 60)){
+                    SundayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((SundayIntervalCheckbox.isChecked() && SundayProgressBar.getProgress() == 40) || (SundayIntervalCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 80)){
+                    SundayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((SundayIntervalCheckbox.isChecked() && SundayProgressBar.getProgress() == 60) || (SundayIntervalCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 100)){
+                    SundayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (SundayIntervalCheckbox.isChecked() && SaturdayProgressBar.getProgress() == 80){
+                    SundayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    SundayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for SundayFlexibilityCheckbox
+        SundayFlexibilityCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((SundayFlexibilityCheckbox.isChecked() && SundayProgressBar.getProgress() == 0) || (SundayFlexibilityCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 40)){
+                    SundayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((SundayFlexibilityCheckbox.isChecked() && SundayProgressBar.getProgress() == 20) || (SundayFlexibilityCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 60)){
+                    SundayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((SundayFlexibilityCheckbox.isChecked() && SundayProgressBar.getProgress() == 40) || (SundayFlexibilityCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 80)){
+                    SundayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((SundayFlexibilityCheckbox.isChecked() && SundayProgressBar.getProgress() == 60) || (SundayFlexibilityCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 100)){
+                    SundayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (SundayFlexibilityCheckbox.isChecked() && SundayProgressBar.getProgress() == 80){
+                    SundayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    SundayProgressBar.setProgress(0);
+                }
+            }
+        });
+
+        // Set On Click Listener for SundayChallengesCheckbox
+        SundayChallengesCheckbox.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                // If only 1 checkbox is true
+                if ((SundayChallengesCheckbox.isChecked() && SundayProgressBar.getProgress() == 0) || (SundayChallengesCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 40)){
+                    SundayProgressBar.setProgress(20);
+                }
+                // If 2 checkboxes are true
+                else if ((SundayChallengesCheckbox.isChecked() && SundayProgressBar.getProgress() == 20) || (SundayChallengesCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 60)){
+                    SundayProgressBar.setProgress(40);
+                }
+                // If 3 checkboxes are true
+                else if ((SundayChallengesCheckbox.isChecked() && SundayProgressBar.getProgress() == 40) || (SundayChallengesCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 80)){
+                    SundayProgressBar.setProgress(60);
+                }
+                // If 4 checkboxes are true
+                else if ((SundayChallengesCheckbox.isChecked() && SundayProgressBar.getProgress() == 60) || (SundayChallengesCheckbox.isChecked() == false && SundayProgressBar.getProgress() == 100)){
+                    SundayProgressBar.setProgress(80);
+                }
+                // If all checkboxes are true
+                else if (SundayChallengesCheckbox.isChecked() && SundayProgressBar.getProgress() == 80){
+                    SundayProgressBar.setProgress(100);
+                }
+                // If all checkboxes are false
+                else {
+                    SundayProgressBar.setProgress(0);
+                }
+            }
+        });
+
     }
 
     // Set Weekly Contents' Visibility to Gone

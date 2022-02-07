@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ChooseGoals"
+            android:exported="false" />
+        <activity
             android:name=".LoggedIn"
             android:exported="false" />
         <activity android:name=".Register" />
@@ -17,9 +20,7 @@
         <activity android:name=".Trackers" />
         <activity android:name=".WeeklyTracker" />
         <activity android:name=".MonthlyTracker" />
-        <activity android:name=".Challenges" >
-
-        </activity>
+        <activity android:name=".Challenges"></activity>
         <activity android:name=".WeeklyChallenges" />
         <activity android:name=".MonthlyChallenges" />
         <activity android:name=".MainActivity">
@@ -28,7 +29,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 

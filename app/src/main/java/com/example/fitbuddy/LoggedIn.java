@@ -14,6 +14,7 @@ public class LoggedIn extends AppCompatActivity {
     private Button TrackersBtn;
     private Button ChallengesBtn;
     private Button LogoutBtn;
+    private Button ExerciseLibrary;
     private FirebaseAuth firebaseAuth;
 
     @Override
@@ -24,6 +25,7 @@ public class LoggedIn extends AppCompatActivity {
         TrackersBtn = findViewById(R.id.TrackersBtn);
         ChallengesBtn = findViewById(R.id.ChallengesBtn);
         LogoutBtn = findViewById(R.id.LogoutBtn);
+        ExerciseLibrary = findViewById(R.id.ExerciseLibraryBtn);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
@@ -49,6 +51,14 @@ public class LoggedIn extends AppCompatActivity {
                 firebaseAuth.signOut();
                 startActivity(new Intent(LoggedIn.this, MainActivity.class));
                 finish();
+            }
+        });
+
+        //choose your goals activity
+        ExerciseLibrary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoggedIn.this, ChooseGoals.class));
             }
         });
     }

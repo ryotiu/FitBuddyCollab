@@ -1,13 +1,22 @@
 <resources>
     <string name="app_name">FitBuddy</string>
     <string name="title_activity_loggedin">Loggedin</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_logged_in">LoggedIn</string>
+    <string name="register">Register</string>
+    <string name="enter_your_first_name">Enter your first name</string>
+    <string name="enter_your_current_weight_lbs">Enter your current weight (lbs)</string>
+    <string name="enter_your_date_of_birth_mm_dd_yyyy">Enter your Birthday (MM-DD-YYYY)</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <string name="enter_your_lastname">Enter your lastName</string>
+    <string name="enter_your_target_weight_lbs">Enter your target weight (lbs)</string>
+    <string name="let_s_get_you_started_on_your_fitness_journey">Let\'s get you started on your fitness journey!</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="i_have_an_account_already">I have an account already</string>
+    <string name="username">Username</string>
+    <string name="_01_01_2022">01/01/2022</string>
+    <string name="birthday">Birthday:</string>
 </resources>

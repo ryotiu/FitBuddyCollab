@@ -45,13 +45,31 @@ public class LoggedIn extends AppCompatActivity {
         //Get Firebase Auth Instance
         firebaseAuth = FirebaseAuth.getInstance();
 
+        //Reuse for on other classes
         //Get Shared Preference, Get User First and Last Name
         SharedPreferences sp = getApplication().getSharedPreferences("UserPrefs", Context.MODE_PRIVATE);
         String username = sp.getString("Username", "");
         FullName.setText(username);
 
+        //Reuse for on other classes
         //Access Firebase Realtime Firebase to display Full Name
-        displayFullName(username);
+        Query getFullName = FirebaseDatabase.getInstance().getReference("Users").child(username);
+        getFullName.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.exists()){
+                    String firstName = snapshot.child("firstName").getValue(String.class);
+                    String lastName = snapshot.child("lastName").getValue(String.class);
+                    String fullName = firstName + " " + lastName;
+                    FullName.setText(fullName);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(LoggedIn.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
 
         //Choose Your Goals Activity
         ExerciseLibrary.setOnClickListener(new View.OnClickListener() {
@@ -102,24 +120,7 @@ public class LoggedIn extends AppCompatActivity {
         });
     }
 
-    //Display Full Name Method
-    private void displayFullName(String username){
-        Query getFullName = FirebaseDatabase.getInstance().getReference("Users").child(username);
-        getFullName.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.exists()){
-                    String firstName = snapshot.child("firstName").getValue(String.class);
-                    String lastName = snapshot.child("lastName").getValue(String.class);
-                    String fullName = firstName + " " + lastName;
-                    FullName.setText(fullName);
-                }
-            }
+    public void displayFullName(){
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(LoggedIn.this, error.getMessage(), Toast.LENGTH_SHORT).show();
-            }
-        });
     }
 }

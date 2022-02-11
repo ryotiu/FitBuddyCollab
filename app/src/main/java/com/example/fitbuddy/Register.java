@@ -28,14 +28,14 @@ import java.util.Calendar;
 
 public class Register extends AppCompatActivity {
 
-    private DatePickerDialog datePickDialog;
-    private EditText firstName, lastName, registerEmail, registerPassWD, currentWeight, targetWeight;
-    private Button registerBtn, birthdayBtn;
-    private TextView haveAccount;
+    DatePickerDialog datePickDialog;
+    EditText firstName, lastName, registerEmail, registerPassWD, currentWeight, targetWeight;
+    Button registerBtn, birthdayBtn;
+    TextView haveAccount;
     
-    private FirebaseAuth firebaseAuth;
-    private FirebaseDatabase root;
-    private DatabaseReference ref;
+    FirebaseAuth firebaseAuth;
+    FirebaseDatabase root;
+    DatabaseReference ref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -135,8 +135,6 @@ public class Register extends AppCompatActivity {
 
         //Check if first name, last name, email, password, current weight, target weight field is empty
         if(!fName.isEmpty() && !lName.isEmpty() && !rEmail.isEmpty() && !rPassword.isEmpty() && !rCWeight.isEmpty() && !rTWeight.isEmpty()) {
-            //Add date checker or make date wheel
-
             //Check if password is at least 6 characters
             if (Patterns.EMAIL_ADDRESS.matcher(rEmail).matches()) {
                 //Check password length for minimum Firebase length
@@ -200,12 +198,11 @@ public class Register extends AppCompatActivity {
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        //Check if Email Exists
                         if(task.isSuccessful()){
                             //Email Does Not Exist in Firebase Auth, Send Email Verification Link
                             //emailVerification();
 
-                            //Create a Firebase Storage Account
+                            //Create a User Account in Firebase Storage
                             String[] splitEmail = email.split("@");
                             String username = splitEmail[0];
                             ref.child(username).setValue(userInfo);

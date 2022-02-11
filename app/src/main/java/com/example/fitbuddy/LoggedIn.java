@@ -45,13 +45,13 @@ public class LoggedIn extends AppCompatActivity {
         //Get Firebase Auth Instance
         firebaseAuth = FirebaseAuth.getInstance();
 
-        //Reuse for on other classes
+        //Reuse on other classes
         //Get Shared Preference, Get User First and Last Name
         SharedPreferences sp = getApplication().getSharedPreferences("UserPrefs", Context.MODE_PRIVATE);
         String username = sp.getString("Username", "");
         FullName.setText(username);
 
-        //Reuse for on other classes
+        //Reuse on other classes
         //Access Firebase Realtime Firebase to display Full Name
         Query getFullName = FirebaseDatabase.getInstance().getReference("Users").child(username);
         getFullName.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -118,9 +118,5 @@ public class LoggedIn extends AppCompatActivity {
                 finish();
             }
         });
-    }
-
-    public void displayFullName(){
-
     }
 }

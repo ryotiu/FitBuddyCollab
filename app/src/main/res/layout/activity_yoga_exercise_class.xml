@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".yogaExerciseClass"
+    android:padding="10dp"
+    android:background="@drawable/goals">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Yoga"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="92dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/yogaheader" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:text="60"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.   Crescent Pose / High Lunge\n   30 seconds each side x 5 sets"
+        android:textSize="20dp"
+        android:layout_marginTop="150dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="92dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="132dp"
+        app:srcCompat="@drawable/cresent"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:text="2.   Warrior Pose\n   30 seconds each side x 5 sets"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="92dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="227dp"
+        app:srcCompat="@drawable/warriorpose"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.   Big Toe Pose\n              60 seconds x 5 sets"
+        android:textSize="20dp"
+        android:layout_marginTop="320dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="92dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="320dp"
+        app:srcCompat="@drawable/bigtoepose"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.   Wheel Pose\n              60 seconds x 5 sets"
+        android:textSize="20dp"
+        android:layout_marginTop="400dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="92dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="390dp"
+        app:srcCompat="@drawable/bowpose"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.   Bow Pose\n              60 seconds x 5 sets"
+        android:textSize="20dp"
+        android:layout_marginTop="480dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="92dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="470dp"
+        app:srcCompat="@drawable/wheelpose"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="590dp"
+        android:text="Back"
+        android:id="@+id/backBtn"
+        android:layout_marginLeft="65dp"
+        android:textSize="15dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="590dp"
+        android:text="Start Workout"
+        android:id="@+id/startTimer"
+        android:layout_marginLeft="180dp"
+        android:textSize="15dp"
+        />
+
+
+
+
+</RelativeLayout>
+
+
+

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".yogaExerciseClass"
+            android:exported="false" />
+        <activity
             android:name=".ChooseGoals"
             android:exported="false" />
         <activity
@@ -20,7 +23,7 @@
         <activity android:name=".Trackers" />
         <activity android:name=".WeeklyTracker" />
         <activity android:name=".MonthlyTracker" />
-        <activity android:name=".Challenges"></activity>
+        <activity android:name=".Challenges" />
         <activity android:name=".WeeklyChallenges" />
         <activity android:name=".MonthlyChallenges" />
         <activity android:name=".MainActivity">

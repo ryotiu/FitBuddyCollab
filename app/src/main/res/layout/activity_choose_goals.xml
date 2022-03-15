@@ -78,5 +78,12 @@
         android:textSize="20dp"
         android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="590dp"
+        android:gravity="center_horizontal"
+        android:text="PLEASE stop exercising immediately if you experience pain, soreness, fatigue, shortness of breath, dizziness, lightheadedness, blurred vision, headache, nausea, sickness, illness, dehydration, excessive sweating, or any other discomfort." />
+
 
 </RelativeLayout>

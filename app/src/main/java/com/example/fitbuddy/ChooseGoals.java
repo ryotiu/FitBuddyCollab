@@ -24,10 +24,14 @@ public class ChooseGoals extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (loseWeight.isChecked()){
-                    //startActivity(new Intent(ChooseGoals.this, loseWeightExerciseClass.class));
-                }else if(buildMuscle.isChecked()){
-                    //startActivity(new Intent(ChooseGoals.this, buildMuscleExerciseClass.class));
-                }else{
+                    startActivity(new Intent(ChooseGoals.this, loseweightExcerciseClass.class));
+                }
+
+                if(buildMuscle.isChecked()){
+                    startActivity(new Intent(ChooseGoals.this, buildmuscleExerciseClass.class));
+                }
+
+                if(achieveFlexibility.isChecked()){
                     startActivity(new Intent(ChooseGoals.this, yogaExerciseClass.class));
                 }
             }

@@ -20,6 +20,8 @@
             android:exported="false" />
         <activity android:name=".Register" />
         <activity android:name=".Login" />
+        <activity android:name=".buildmuscleExerciseClass" />
+        <activity android:name=".loseweightExcerciseClass" />
         <activity android:name=".Trackers" />
         <activity android:name=".WeeklyTracker" />
         <activity android:name=".MonthlyTracker" />
@@ -27,6 +29,7 @@
         <activity android:name=".WeeklyChallenges" />
         <activity android:name=".MonthlyChallenges" />
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -21,6 +21,8 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthInvalidUserException;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -32,7 +34,7 @@ public class Register extends AppCompatActivity {
     EditText firstName, lastName, registerEmail, registerPassWD, currentWeight, targetWeight;
     Button registerBtn, birthdayBtn;
     TextView haveAccount;
-    
+
     FirebaseAuth firebaseAuth;
     FirebaseDatabase root;
     DatabaseReference ref;
@@ -42,7 +44,7 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         initDatePicker();
-        
+
         firstName = (EditText) findViewById(R.id.FirstName);
         lastName = (EditText) findViewById(R.id.LastName);
         registerEmail = (EditText) findViewById(R.id.RegisterEmail);
@@ -199,9 +201,6 @@ public class Register extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            //Email Does Not Exist in Firebase Auth, Send Email Verification Link
-                            //emailVerification();
-
                             //Create a User Account in Firebase Storage
                             String[] splitEmail = email.split("@");
                             String username = splitEmail[0];
@@ -210,16 +209,30 @@ public class Register extends AppCompatActivity {
                             startActivity(new Intent(Register.this, Login.class));
                             finish();
                         }
-                        else{
-                            //Email Does Exist in Firebase, display Error
-                            registerEmail.setError("Email Already Exists");
-                            registerEmail.requestFocus();
-                        }
                     }
                 }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
                 Toast.makeText(Register.this, "Registration Failed", Toast.LENGTH_SHORT).show();
+
+                if(e instanceof FirebaseAuthUserCollisionException){
+                    //Email Exist in Firebase, display Error
+                    registerEmail.setError("Email Already Exists");
+                    registerEmail.requestFocus();
+                }
+                else if(e instanceof FirebaseAuthInvalidUserException){
+                    String ExceptionErrorCode = ((FirebaseAuthInvalidUserException) e).getErrorCode();
+                    if (ExceptionErrorCode.equals("ERROR_USER_NOT_FOUND")) {
+                        registerEmail.setError("No Such Account Exist");
+                        registerEmail.requestFocus();
+                    } else if (ExceptionErrorCode.equals("ERROR_USER_DISABLED")) {
+                        registerEmail.setError("User Email has been banned");
+                        registerEmail.requestFocus();
+                    } else {
+                        registerEmail.setError(e.getLocalizedMessage());
+                        registerEmail.requestFocus();
+                    }
+                }
             }
         });
     }

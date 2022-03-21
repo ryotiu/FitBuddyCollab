@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Chat"
+            android:exported="false" />
+        <activity
             android:name=".yogaExerciseClass"
             android:exported="false" />
         <activity
@@ -29,7 +32,6 @@
         <activity android:name=".WeeklyChallenges" />
         <activity android:name=".MonthlyChallenges" />
         <activity android:name=".MainActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

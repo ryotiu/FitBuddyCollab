@@ -23,6 +23,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidUserException;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -127,6 +128,7 @@ public class Register extends AppCompatActivity {
         ref = root.getReference("Users");
 
         //Then save all the input values as string
+
         String fName = firstName.getText().toString();
         String lName = lastName.getText().toString();
         String rBirthday = birthdayBtn.getText().toString();
@@ -134,6 +136,9 @@ public class Register extends AppCompatActivity {
         String rPassword = registerPassWD.getText().toString();
         String rCWeight = currentWeight.getText().toString();
         String rTWeight = targetWeight.getText().toString();
+        String[] splitEmail = rEmail.split("@");
+        String username = splitEmail[0];
+        String imageURL = "default";
 
         //Check if first name, last name, email, password, current weight, target weight field is empty
         if(!fName.isEmpty() && !lName.isEmpty() && !rEmail.isEmpty() && !rPassword.isEmpty() && !rCWeight.isEmpty() && !rTWeight.isEmpty()) {
@@ -144,10 +149,11 @@ public class Register extends AppCompatActivity {
                     //Check current & target weight is higher than 0 and lower than 1400
                     if((Integer.parseInt(rCWeight) > 0 && Integer.parseInt(rCWeight) <= 1400) && (Integer.parseInt(rTWeight) > 0 && Integer.parseInt(rTWeight) <= 1400)){
                         //Put all the strings into a UserClass for Firebase Storage Upload
-                        UserClass User = new UserClass(fName, lName, rBirthday, rEmail, rCWeight, rTWeight);
+                        //UserClass User = new UserClass(username, fName, lName, rBirthday, rEmail, rCWeight, rTWeight, imageURL);
 
                         //Register User
-                        RegisterUser(User, rEmail, rPassword);
+                        //RegisterUser(User, rEmail, rPassword);
+                        RegisterUser(fName, lName, rBirthday, rEmail, rPassword, rCWeight, rTWeight, imageURL);
                     }
                     else if((Integer.parseInt(rCWeight) <= 0 || Integer.parseInt(rCWeight) > 1400)){
                         currentWeight.setError("Impossible Weight entered");
@@ -194,17 +200,24 @@ public class Register extends AppCompatActivity {
         }
     }
 
-    private void RegisterUser(UserClass userInfo, String email, String password){
+    private void RegisterUser(String firstName, String lastName, String Birthday, String email, String password, String CWeight, String TWeight, String imageURL){
+    //private void RegisterUser(UserClass userInfo, String email, String password){
         //Create user in Firebase Auth and Storage
         firebaseAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            //Create a User Account in Firebase Storage
+                            //Create a Username for Firebase Storage
                             String[] splitEmail = email.split("@");
                             String username = splitEmail[0];
-                            ref.child(username).setValue(userInfo);
+
+                            //Create a User Account by UID
+                            FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+                            String userID = firebaseUser.getUid();
+                            UserClass userInfo = new UserClass(userID, username, firstName, lastName, Birthday, email, CWeight, TWeight, imageURL);
+                            ref.child(userID).setValue(userInfo);
+
                             Toast.makeText(Register.this, "Successfully Registered User", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(Register.this, Login.class));
                             finish();

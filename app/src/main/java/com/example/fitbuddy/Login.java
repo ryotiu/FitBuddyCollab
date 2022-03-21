@@ -25,7 +25,7 @@ public class Login extends AppCompatActivity {
     EditText loginEmail, loginPassword;
     TextView noAccount, forgotPassword;
     Button loginBtn;
-    SharedPreferences sp;
+    //SharedPreferences sp;
     FirebaseAuth firebaseAuth;
 
     @Override
@@ -40,7 +40,7 @@ public class Login extends AppCompatActivity {
         loginBtn = (Button) findViewById(R.id.LoginBtn);
 
         //Create SharePreference
-        sp = getSharedPreferences("UserPrefs", Context.MODE_PRIVATE);
+        //sp = getSharedPreferences("UserPrefs", Context.MODE_PRIVATE);
 
         //Get Firebase Auth Instance
         firebaseAuth = FirebaseAuth.getInstance();
@@ -96,11 +96,12 @@ public class Login extends AppCompatActivity {
                         @Override
                         public void onSuccess(AuthResult authResult) {
                             //Save Username in SharedPreference, move user to LoggedIn Activity
-                            String[] splitEmail = lEmail.split("@");
-                            String username = splitEmail[0];
-                            SharedPreferences.Editor editor = sp.edit();
-                            editor.putString("Username", username);
-                            editor.apply();
+                            //String[] splitEmail = lEmail.split("@");
+                            //String username = splitEmail[0];
+                            //SharedPreferences.Editor editor = sp.edit();
+                            //editor.putString("Username", username);
+                            //editor.apply();
+
                             Toast.makeText(Login.this, "Successfully Login", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(Login.this, LoggedIn.class));
                         }

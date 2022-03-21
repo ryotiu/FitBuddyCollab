@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -29,6 +30,7 @@ public class LoggedIn extends AppCompatActivity {
     Button LogoutBtn;
 
     FirebaseAuth firebaseAuth;
+    FirebaseUser firebaseUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,17 +45,18 @@ public class LoggedIn extends AppCompatActivity {
         LogoutBtn = findViewById(R.id.LogoutBtn);
 
         //Get Firebase Auth Instance
-        firebaseAuth = FirebaseAuth.getInstance();
-
+        //firebaseAuth = FirebaseAuth.getInstance();
         //Reuse on other classes
         //Get Shared Preference, Get User First and Last Name
-        SharedPreferences sp = getApplication().getSharedPreferences("UserPrefs", Context.MODE_PRIVATE);
-        String username = sp.getString("Username", "");
-        FullName.setText(username);
+        //SharedPreferences sp = getApplication().getSharedPreferences("UserPrefs", Context.MODE_PRIVATE);
+        //String username = sp.getString("Username", "");
+        //FullName.setText(username);
 
-        //Reuse on other classes
+        //Reuse on other classes for users Full Name
         //Access Firebase Realtime Firebase to display Full Name
-        Query getFullName = FirebaseDatabase.getInstance().getReference("Users").child(username);
+        firebaseAuth = FirebaseAuth.getInstance();
+        firebaseUser = firebaseAuth.getCurrentUser();
+        Query getFullName = FirebaseDatabase.getInstance().getReference("Users").child(firebaseUser.getUid());
         getFullName.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -99,7 +102,7 @@ public class LoggedIn extends AppCompatActivity {
         ChatBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startActivity(new Intent(LoggedIn.this, Chat.class));
+                startActivity(new Intent(LoggedIn.this, Chat.class));
             }
         });
 
@@ -111,7 +114,7 @@ public class LoggedIn extends AppCompatActivity {
                 firebaseAuth.signOut();
 
                 //Clear SharedPreference
-                sp.edit().clear().apply();
+                //sp.edit().clear().apply();
 
                 //Change Screen to Main Activity
                 startActivity(new Intent(LoggedIn.this, MainActivity.class));

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/goals"
+    tools:context=".MeditationChallenges">
+
+    <TextView
+        android:id="@+id/MeditationChallengesHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Meditation Challenge"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="100dp"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/Day1MeditationChallengesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#fff3eb"
+        android:text="DAY 1"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/Day2MeditationChallengesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff3eb"
+        android:text="DAY 2"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/Day3MeditationChallengesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAY 3"
+        android:background="#fff3eb"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/Day4MeditationChallengesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAY 4"
+        android:background="#fff3eb"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/Day5MeditationChallengesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAY 5"
+        android:background="#fff3eb"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/Day6MeditationChallengesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAY 6"
+        android:background="#fff3eb"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/Day7MeditationChallengesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAY 7"
+        android:background="#fff3eb"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

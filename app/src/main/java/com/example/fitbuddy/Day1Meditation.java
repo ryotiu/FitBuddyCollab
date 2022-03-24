@@ -4,11 +4,11 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Day5Cardio extends AppCompatActivity {
+public class Day1Meditation extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_day5cardio);
+        setContentView(R.layout.activity_day1meditation);
     }
 }

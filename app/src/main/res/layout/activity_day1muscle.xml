@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Day2Cardio"
+    tools:context=".Day1Muscle"
     android:padding="10dp"
     android:background="@drawable/goals">
 
@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Weight-Loss Training"
+        android:text="Muscle Training"
         android:textSize="25dp"
         android:textStyle="bold" />
 
@@ -22,25 +22,25 @@
         android:layout_height="92dp"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="32dp"
-        app:srcCompat="@drawable/loseweightheader" />
+        app:srcCompat="@drawable/buildmuscleheader" />
 
     <TextView
         android:id="@+id/timer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="320dp"
+        android:layout_marginLeft="300dp"
         android:text="60"
         android:textSize="25dp" />
 
     <Button
-        android:id="@+id/tiptoeJacksBtn"
+        android:id="@+id/LungesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
         android:paddingRight="50dp"
-        android:text="1.  Tip-Toe Jacks\n       30 seconds each side x 5 sets"
+        android:text="1.   Lunges\n       30 seconds each side x 5 sets"
         android:textAllCaps="false" />
 
     <ImageView
@@ -48,35 +48,35 @@
         android:layout_height="92dp"
         android:layout_marginLeft="290dp"
         android:layout_marginTop="132dp"
-        app:srcCompat="@drawable/fingertiptotoejacks" />
+        app:srcCompat="@drawable/lunges" />
 
     <Button
-        android:id="@+id/CrunchesBtn"
+        android:id="@+id/SquatsBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="235dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
         android:paddingRight="120dp"
-        android:text="2.   Crunches\n      60 seconds x 5 sets"
+        android:text="2.   Squats\n      30 seconds x 5 sets"
         android:textAllCaps="false" />
 
     <ImageView
-        android:layout_width="73dp"
-        android:layout_height="68dp"
-        android:layout_marginLeft="320dp"
+        android:layout_width="wrap_content"
+        android:layout_height="92dp"
+        android:layout_marginLeft="290dp"
         android:layout_marginTop="220dp"
-        app:srcCompat="@drawable/crunches" />
+        app:srcCompat="@drawable/squats" />
 
     <Button
-        android:id="@+id/SkippingBtn"
+        android:id="@+id/PlanksBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="325dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
         android:paddingRight="110dp"
-        android:text="3.   Skipping in Place \n      60 seconds x 5 sets"
+        android:text="3.   Plank\n      30 seconds x 5 sets"
         android:textAllCaps="false" />
 
     <ImageView
@@ -84,17 +84,17 @@
         android:layout_height="92dp"
         android:layout_marginLeft="290dp"
         android:layout_marginTop="300dp"
-        app:srcCompat="@drawable/skippingrope" />
+        app:srcCompat="@drawable/planks" />
 
     <Button
-        android:id="@+id/mountainClimbersBtn"
+        android:id="@+id/TricepdipBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="405dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
         android:paddingRight="50dp"
-        android:text="4.   Mountain Climbers\n       60 seconds x 5 sets"
+        android:text="4.   Tricep Dip\n       30 seconds each side x 5 sets"
         android:textAllCaps="false" />
 
     <ImageView
@@ -102,17 +102,17 @@
         android:layout_height="92dp"
         android:layout_marginLeft="290dp"
         android:layout_marginTop="370dp"
-        app:srcCompat="@drawable/mountainclimber" />
+        app:srcCompat="@drawable/tricepdip" />
 
     <Button
-        android:id="@+id/skaterJumpsBtn"
+        android:id="@+id/PushupsBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="485dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="90dp"
-        android:text="5.   Skater Jumps\n       30 seconds each side x 5 sets"
+        android:paddingRight="110dp"
+        android:text="5.   Push Ups\n       60 seconds x 5 sets"
         android:textAllCaps="false" />
 
     <ImageView
@@ -120,7 +120,7 @@
         android:layout_height="92dp"
         android:layout_marginLeft="290dp"
         android:layout_marginTop="460dp"
-        app:srcCompat="@drawable/skaterjumps" />
+        app:srcCompat="@drawable/pushups" />
 
     <Button
         android:layout_width="wrap_content"

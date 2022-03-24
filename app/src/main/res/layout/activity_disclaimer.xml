@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/goals"
+    tools:context=".Disclaimer">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Disclaimer"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="110dp"
+        android:inputType="textMultiLine"
+        android:text="FitBuddy App Trainer strongly recommends that you consult with your physician before beginning any exercise program. You should be in good physical condition and be able to participate in the exercises. FitBuddy App Trainer is not a licensed medical care provider and represents that it has no expertise in diagnosing, examining, or treating medical conditions of any kind, or in determining the effect of any specific exercise on a medical condition."
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="275dp"
+        android:inputType="textMultiLine"
+        android:text="You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in any exercise program, you agree that you do so at your own risk, and assume all risk of injury to yourself, and agree to release and discharge FitBuddy App Trainer from any and all claims or causes of action, known or unknown, arising out of the exercises shown in the app"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="440dp"
+        android:inputType="textMultiLine"
+        android:text="The information provided is not intended to be a substitute for professional medical advice, diagnosis or treatment.  Never disregard professional medical advice, or delay in seeking it, because of something you have read on this App.  Never rely on information on this App in place of seeking professional medical advice."
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/agreeandcontinueBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="580dp"
+        android:padding="18dp"
+        android:text="I Understand"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

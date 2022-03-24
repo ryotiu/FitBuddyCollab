@@ -4,11 +4,11 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MonthlyMeditationChallenges extends AppCompatActivity {
+public class Day2Yoga extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_monthlymeditation_challenges);
+        setContentView(R.layout.activity_day2yoga);
     }
 }

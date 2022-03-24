@@ -58,7 +58,7 @@ public class Challenges extends AppCompatActivity {
         musclesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Challenges.this, MusclesChallenges.class));
+                startActivity(new Intent(Challenges.this, MuscleChallenges.class));
             }
         });
 

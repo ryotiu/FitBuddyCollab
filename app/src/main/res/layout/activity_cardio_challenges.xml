@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/goals"
+    tools:context=".CardioChallenges">
+
+    <TextView
+        android:id="@+id/CardioChallengesHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Cardio Challenge"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="130dp"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/Day1CardioChallengesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#fff3eb"
+        android:text="DAY 1"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/Day2CardioChallengesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff3eb"
+        android:text="DAY 2"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/Day3CardioChallengesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAY 3"
+        android:background="#fff3eb"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/Day4CardioChallengesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAY 4"
+        android:background="#fff3eb"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/Day5CardioChallengesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAY 5"
+        android:background="#fff3eb"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/Day6CardioChallengesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAY 6"
+        android:background="#fff3eb"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/Day7CardioChallengesBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAY 7"
+        android:background="#fff3eb"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
+
+
+
+
+
+
+

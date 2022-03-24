@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Chat"
-            android:exported="false" />
-        <activity
             android:name=".yogaExerciseClass"
             android:exported="false" />
         <activity
@@ -25,13 +22,31 @@
         <activity android:name=".Login" />
         <activity android:name=".buildmuscleExerciseClass" />
         <activity android:name=".loseweightExcerciseClass" />
+        <activity android:name=".yogaVideoClass" />
+        <activity android:name=".Disclaimer" />
         <activity android:name=".Trackers" />
         <activity android:name=".WeeklyTracker" />
         <activity android:name=".MonthlyTracker" />
         <activity android:name=".Challenges" />
+        <activity android:name=".CardioChallenges" />
+        <activity android:name=".MusclesChallenges" />
+        <activity android:name=".YogaChallenges" />
+        <activity android:name=".MeditationChallenges" />
+        <activity android:name=".WeeklyMeditationChallenges" />
+        <activity android:name=".MonthlyMeditationChallenges" />
+        <activity android:name=".WeeklyCardioChallenges" />
+        <activity android:name=".MonthlyCardioChallenges" />
+        <activity android:name=".Day1Cardio" />
+        <activity android:name=".Day2Cardio" />
+        <activity android:name=".Day3Cardio" />
+        <activity android:name=".Day4Cardio" />
+        <activity android:name=".Day5Cardio" />
+        <activity android:name=".Day6Cardio" />
+        <activity android:name=".Day7Cardio" />
         <activity android:name=".WeeklyChallenges" />
         <activity android:name=".MonthlyChallenges" />
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

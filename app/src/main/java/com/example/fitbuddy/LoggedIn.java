@@ -9,11 +9,11 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
@@ -23,14 +23,14 @@ import com.google.firebase.database.ValueEventListener;
 public class LoggedIn extends AppCompatActivity {
 
     TextView FullName;
-    Button ExerciseLibrary;
-    Button ChallengesBtn;
-    Button TrackersBtn;
-    Button ChatBtn;
+    ImageButton ExerciseLibrary;
+    ImageButton ChallengesBtn;
+    ImageButton TrackersBtn;
+    ImageButton ChatBtn;
     Button LogoutBtn;
+    Button DisclaimerBtn;
 
     FirebaseAuth firebaseAuth;
-    FirebaseUser firebaseUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,20 +43,20 @@ public class LoggedIn extends AppCompatActivity {
         TrackersBtn = findViewById(R.id.TrackersBtn);
         ChatBtn = findViewById(R.id.ChatBtn);
         LogoutBtn = findViewById(R.id.LogoutBtn);
+        DisclaimerBtn = findViewById(R.id.DisclaimerBtn);
 
         //Get Firebase Auth Instance
-        //firebaseAuth = FirebaseAuth.getInstance();
+        firebaseAuth = FirebaseAuth.getInstance();
+
         //Reuse on other classes
         //Get Shared Preference, Get User First and Last Name
-        //SharedPreferences sp = getApplication().getSharedPreferences("UserPrefs", Context.MODE_PRIVATE);
-        //String username = sp.getString("Username", "");
-        //FullName.setText(username);
+        SharedPreferences sp = getApplication().getSharedPreferences("UserPrefs", Context.MODE_PRIVATE);
+        String username = sp.getString("Username", "");
+        FullName.setText(username);
 
-        //Reuse on other classes for users Full Name
+        //Reuse on other classes
         //Access Firebase Realtime Firebase to display Full Name
-        firebaseAuth = FirebaseAuth.getInstance();
-        firebaseUser = firebaseAuth.getCurrentUser();
-        Query getFullName = FirebaseDatabase.getInstance().getReference("Users").child(firebaseUser.getUid());
+        Query getFullName = FirebaseDatabase.getInstance().getReference("Users").child(username);
         getFullName.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -102,9 +102,18 @@ public class LoggedIn extends AppCompatActivity {
         ChatBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoggedIn.this, Chat.class));
+                //startActivity(new Intent(LoggedIn.this, Chat.class));
             }
         });
+
+        // Launch activity_Disclaimer AndroidManifest.xml
+        DisclaimerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoggedIn.this, Disclaimer.class));
+            }
+        });
+
 
         //Logout User and clear SharedPreference
         LogoutBtn.setOnClickListener(new View.OnClickListener() {
@@ -114,7 +123,7 @@ public class LoggedIn extends AppCompatActivity {
                 firebaseAuth.signOut();
 
                 //Clear SharedPreference
-                //sp.edit().clear().apply();
+                sp.edit().clear().apply();
 
                 //Change Screen to Main Activity
                 startActivity(new Intent(LoggedIn.this, MainActivity.class));

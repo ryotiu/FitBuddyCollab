@@ -11,11 +11,10 @@
         android:id="@+id/skipBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="320dp"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
         android:text="Skip >"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="20dp" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView7"
@@ -66,6 +65,7 @@
             android:text="Achieve flexibility" />
 
     </RadioGroup>
+
     <Button
         android:id="@+id/getstartedBtn"
         android:layout_width="wrap_content"
@@ -78,12 +78,12 @@
         android:textSize="20dp"
         android:textStyle="bold" />
 
-    <TextView
+    <Button
+        android:id="@+id/backtodashboardBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="590dp"
-        android:gravity="center_horizontal"
-        android:text="PLEASE stop exercising immediately if you experience pain, soreness, fatigue, shortness of breath, dizziness, lightheadedness, blurred vision, headache, nausea, sickness, illness, dehydration, excessive sweating, or any other discomfort." />
-
+        android:background="@android:color/transparent"
+        android:text="Back"
+        android:textStyle="bold" />
 
 </RelativeLayout>

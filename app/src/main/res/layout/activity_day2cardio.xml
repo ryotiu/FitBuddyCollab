@@ -9,11 +9,11 @@
     android:background="@drawable/goals">
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/Day2CardioChallengesHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Weight-Loss Training"
+        android:text="Cardio Challenge"
         android:textSize="25dp"
         android:textStyle="bold" />
 
@@ -25,7 +25,7 @@
         app:srcCompat="@drawable/loseweightheader" />
 
     <TextView
-        android:id="@+id/timer"
+        android:id="@+id/Day2CardioChallengesTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="320dp"
@@ -33,7 +33,7 @@
         android:textSize="25dp" />
 
     <Button
-        android:id="@+id/tiptoeJacksBtn"
+        android:id="@+id/Day2Step1CardioChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
@@ -51,7 +51,7 @@
         app:srcCompat="@drawable/fingertiptotoejacks" />
 
     <Button
-        android:id="@+id/CrunchesBtn"
+        android:id="@+id/Day2Step2CardioChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="235dp"
@@ -69,50 +69,50 @@
         app:srcCompat="@drawable/crunches" />
 
     <Button
-        android:id="@+id/SkippingBtn"
+        android:id="@+id/Day2Step3CardioChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="325dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="110dp"
-        android:text="3.   Skipping in Place \n      60 seconds x 5 sets"
+        android:paddingRight="50dp"
+        android:text="3.   Curtsy Lunge \n      30 seconds each side x 5 sets"
         android:textAllCaps="false" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="92dp"
         android:layout_marginLeft="290dp"
-        android:layout_marginTop="300dp"
-        app:srcCompat="@drawable/skippingrope" />
+        android:layout_marginTop="290dp"
+        app:srcCompat="@drawable/curtsylunge" />
 
     <Button
-        android:id="@+id/mountainClimbersBtn"
+        android:id="@+id/Day2Step4CardioChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="405dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
         android:paddingRight="50dp"
-        android:text="4.   Mountain Climbers\n       60 seconds x 5 sets"
+        android:text="4.   Extended Side Lunge\n       30 seconds each side x 5 sets"
         android:textAllCaps="false" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="92dp"
         android:layout_marginLeft="290dp"
-        android:layout_marginTop="370dp"
-        app:srcCompat="@drawable/mountainclimber" />
+        android:layout_marginTop="380dp"
+        app:srcCompat="@drawable/extendedsidelunge" />
 
     <Button
-        android:id="@+id/skaterJumpsBtn"
+        android:id="@+id/Day2Step5CardioChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="485dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="90dp"
-        android:text="5.   Skater Jumps\n       30 seconds each side x 5 sets"
+        android:paddingRight="50dp"
+        android:text="5.   Eye of the Needle Pose\n       30 seconds each side x 5 sets"
         android:textAllCaps="false" />
 
     <ImageView
@@ -120,25 +120,24 @@
         android:layout_height="92dp"
         android:layout_marginLeft="290dp"
         android:layout_marginTop="460dp"
-        app:srcCompat="@drawable/skaterjumps" />
+        app:srcCompat="@drawable/eyeofneedle" />
 
     <Button
+        android:id="@+id/backtochallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="550dp"
         android:text="Back"
-        android:id="@+id/backBtn"
-        android:layout_centerHorizontal="true"
-        android:textSize="15dp"
-        />
+        android:textSize="15dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click the exercise to start the timer! Once completed move onto the next."
-        android:textStyle="bold"
+        android:layout_marginTop="605dp"
         android:gravity="center_horizontal"
-        android:layout_marginTop="605dp" />
+        android:text="Click the exercise to start the timer! Once completed move onto the next."
+        android:textStyle="italic" />
 
 </RelativeLayout>
 

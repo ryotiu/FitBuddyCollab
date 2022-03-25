@@ -9,11 +9,11 @@
     android:background="@drawable/goals">
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/Day2MuscleChallengesHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Muscle Training"
+        android:text="Muscle Challenge"
         android:textSize="25dp"
         android:textStyle="bold" />
 
@@ -25,7 +25,7 @@
         app:srcCompat="@drawable/buildmuscleheader" />
 
     <TextView
-        android:id="@+id/timer"
+        android:id="@+id/Day2MuscleChallengestimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="300dp"
@@ -33,7 +33,7 @@
         android:textSize="25dp" />
 
     <Button
-        android:id="@+id/LungesBtn"
+        android:id="@+id/Day2Step1MuscleChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
@@ -51,7 +51,7 @@
         app:srcCompat="@drawable/lunges" />
 
     <Button
-        android:id="@+id/SquatsBtn"
+        android:id="@+id/Day2Step2MuscleChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="235dp"
@@ -69,7 +69,7 @@
         app:srcCompat="@drawable/squats" />
 
     <Button
-        android:id="@+id/PlanksBtn"
+        android:id="@+id/Day2Step3MuscleChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="325dp"
@@ -87,7 +87,7 @@
         app:srcCompat="@drawable/planks" />
 
     <Button
-        android:id="@+id/TricepdipBtn"
+        android:id="@+id/Day2Step4MuscleChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="405dp"
@@ -105,7 +105,7 @@
         app:srcCompat="@drawable/tricepdip" />
 
     <Button
-        android:id="@+id/PushupsBtn"
+        android:id="@+id/Day2Step5MuscleChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="485dp"
@@ -123,22 +123,21 @@
         app:srcCompat="@drawable/pushups" />
 
     <Button
+        android:id="@+id/backtochallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="550dp"
         android:text="Back"
-        android:id="@+id/backBtn"
-        android:layout_centerHorizontal="true"
-        android:textSize="15dp"
-        />
+        android:textSize="15dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click the exercise to start the timer! Once completed move onto the next."
-        android:textStyle="bold"
+        android:layout_marginTop="605dp"
         android:gravity="center_horizontal"
-        android:layout_marginTop="605dp" />
+        android:text="Click the exercise to start the timer! Once completed move onto the next."
+        android:textStyle="italic" />
 
 </RelativeLayout>
 

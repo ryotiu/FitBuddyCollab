@@ -93,7 +93,7 @@
         android:layout_marginTop="405dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="50dp"
+        android:paddingRight="110dp"
         android:text="4.   Mountain Climbers\n       60 seconds x 5 sets"
         android:textAllCaps="false" />
 
@@ -111,7 +111,7 @@
         android:layout_marginTop="485dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="90dp"
+        android:paddingRight="40dp"
         android:text="5.   Skater Jumps\n       30 seconds each side x 5 sets"
         android:textAllCaps="false" />
 

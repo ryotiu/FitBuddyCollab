@@ -28,7 +28,7 @@
         <activity android:name=".Trackers" />
         <activity android:name=".WeeklyTracker" />
         <activity android:name=".MonthlyTracker" />
-        <activity android:name=".Challenges" />
+<!--        <activity android:name=".Challenges" />-->
         <activity android:name=".MuscleChallenges" />
         <activity android:name=".YogaChallenges" />
         <activity android:name=".MeditationChallenges" />
@@ -40,7 +40,7 @@
         <activity android:name=".Day2Yoga" />
         <activity android:name=".Day2Cardio" />
         <activity android:name=".Day1Meditation" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Challenges">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

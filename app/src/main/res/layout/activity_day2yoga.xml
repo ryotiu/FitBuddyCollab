@@ -9,11 +9,11 @@
     android:background="@drawable/goals">
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/Day2YogaChallengestimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Yoga"
+        android:text="Yoga Challenge"
         android:textSize="25dp"
         android:textStyle="bold" />
 
@@ -25,7 +25,7 @@
         app:srcCompat="@drawable/yogaheader" />
 
     <TextView
-        android:id="@+id/timer"
+        android:id="@+id/Day2YogaChallengesHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="300dp"
@@ -33,68 +33,68 @@
         android:textSize="25dp" />
 
     <Button
-        android:id="@+id/cresentPoseBtn"
-        android:paddingRight="50dp"
+        android:id="@+id/Day2Step1YogaChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
-        android:textAllCaps="false"
+        android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:text="1.   Crescent Pose / High Lunge\n       30 seconds each side x 5 sets"
-        android:background="@color/cardview_light_background" />
+        android:paddingRight="50dp"
+        android:text="1.   Seated Forward Bend\n       30 seconds each side x 5 sets"
+        android:textAllCaps="false" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="92dp"
         android:layout_marginLeft="290dp"
         android:layout_marginTop="132dp"
-        app:srcCompat="@drawable/cresent" />
+        app:srcCompat="@drawable/seatedforwardbend" />
 
     <Button
-        android:id="@+id/warriorPoseBtn"
+        android:id="@+id/Day2Step2YogaChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="235dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
         android:paddingRight="50dp"
-        android:text="2.   Warrior Pose\n      30 seconds each side x 5 sets"
+        android:text="2.   Knee to Chest Pose\n      30 seconds each side x 5 sets"
         android:textAllCaps="false" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="92dp"
         android:layout_marginLeft="290dp"
-        android:layout_marginTop="227dp"
-        app:srcCompat="@drawable/warriorpose" />
+        android:layout_marginTop="217dp"
+        app:srcCompat="@drawable/kneetochestpose" />
 
     <Button
-        android:id="@+id/bigtoePoseBtn"
+        android:id="@+id/Day2Step3YogaChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="325dp"
         android:background="@color/cardview_light_background"
-        android:paddingRight="110dp"
         android:gravity="left|center_vertical"
-        android:text="3.   Big Toe Pose\n      60 seconds x 5 sets"
+        android:paddingRight="110dp"
+        android:text="3.   Tree Pose\n      60 seconds x 5 sets"
         android:textAllCaps="false" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="92dp"
         android:layout_marginLeft="290dp"
-        android:layout_marginTop="320dp"
-        app:srcCompat="@drawable/bigtoepose" />
+        android:layout_marginTop="300dp"
+        app:srcCompat="@drawable/treepose" />
 
     <Button
-        android:id="@+id/wheelPoseBtn"
+        android:id="@+id/Day2Step4YogaChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="405dp"
         android:background="@color/cardview_light_background"
-        android:paddingRight="110dp"
         android:gravity="left|center_vertical"
-        android:text="4.   Wheel Pose\n       60 seconds x 5 sets"
+        android:paddingRight="110dp"
+        android:text="4.   Locust Pose\n       60 seconds x 5 sets"
         android:textAllCaps="false" />
 
     <ImageView
@@ -102,17 +102,17 @@
         android:layout_height="92dp"
         android:layout_marginLeft="290dp"
         android:layout_marginTop="390dp"
-        app:srcCompat="@drawable/bowpose" />
+        app:srcCompat="@drawable/locustpose" />
 
     <Button
-        android:id="@+id/bowPoseBtn"
+        android:id="@+id/Day2Step5YogaChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="485dp"
         android:background="@color/cardview_light_background"
-        android:paddingRight="110dp"
         android:gravity="left|center_vertical"
-        android:text="5.   Bow Pose\n       60 seconds x 5 sets"
+        android:paddingRight="110dp"
+        android:text="5.   Fish Pose\n       60 seconds x 5 sets"
         android:textAllCaps="false" />
 
     <ImageView
@@ -120,26 +120,24 @@
         android:layout_height="92dp"
         android:layout_marginLeft="290dp"
         android:layout_marginTop="470dp"
-        app:srcCompat="@drawable/wheelpose"
-        />
+        app:srcCompat="@drawable/fishpose" />
 
     <Button
+        android:id="@+id/backtochallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="550dp"
         android:text="Back"
-        android:id="@+id/backBtn"
-        android:layout_centerHorizontal="true"
-        android:textSize="15dp"
-        />
+        android:textSize="15dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click the exercise to start the timer! Once completed move onto the next."
-        android:textStyle="bold"
+        android:layout_marginTop="605dp"
         android:gravity="center_horizontal"
-        android:layout_marginTop="605dp" />
+        android:text="Click the exercise to start the timer! Once completed move onto the next."
+        android:textStyle="italic" />
 
 </RelativeLayout>
 

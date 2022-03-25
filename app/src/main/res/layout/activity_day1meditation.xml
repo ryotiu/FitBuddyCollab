@@ -9,23 +9,22 @@
     android:background="@drawable/goals">
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/Day1MeditationChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Weight-Loss Training"
+        android:text="Meditation Challenge"
         android:textSize="25dp"
         android:textStyle="bold" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="92dp"
-        android:layout_marginLeft="150dp"
         android:layout_marginTop="32dp"
-        app:srcCompat="@drawable/loseweightheader" />
+        app:srcCompat="@drawable/meditation" />
 
     <TextView
-        android:id="@+id/timer"
+        android:id="@+id/Day1CardioChallengesTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="320dp"
@@ -33,14 +32,14 @@
         android:textSize="25dp" />
 
     <Button
-        android:id="@+id/tiptoeJacksBtn"
+        android:id="@+id/Day1Step1MeditationChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
         android:paddingRight="50dp"
-        android:text="1.  Tip-Toe Jacks\n       30 seconds each side x 5 sets"
+        android:text="1.  Folded Legs - Inhale and Exhale\n      30 seconds x 10 sets"
         android:textAllCaps="false" />
 
     <ImageView
@@ -48,71 +47,72 @@
         android:layout_height="92dp"
         android:layout_marginLeft="290dp"
         android:layout_marginTop="132dp"
-        app:srcCompat="@drawable/fingertiptotoejacks" />
+        app:srcCompat="@drawable/sittingpose" />
 
     <Button
-        android:id="@+id/CrunchesBtn"
+        android:id="@+id/Day1Step2MeditationChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="235dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="120dp"
-        android:text="2.   Crunches\n      60 seconds x 5 sets"
+        android:paddingRight="10dp"
+        android:text="2.   Lotus Pose - Deep Breathing\n      Hold Breath for 30 seconds x 10 sets"
         android:textAllCaps="false" />
 
     <ImageView
         android:layout_width="73dp"
         android:layout_height="68dp"
-        android:layout_marginLeft="320dp"
+        android:layout_marginLeft="305dp"
         android:layout_marginTop="220dp"
-        app:srcCompat="@drawable/crunches" />
+        app:srcCompat="@drawable/lotuspose" />
 
     <Button
-        android:id="@+id/SkippingBtn"
+        android:id="@+id/Day1Step3MeditationChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="325dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="110dp"
-        android:text="3.   Skipping in Place \n      60 seconds x 5 sets"
+        android:paddingRight="70dp"
+        android:text="3.   Seated Side Bend \n      30 seconds each side x 5 sets"
         android:textAllCaps="false" />
+
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="92dp"
         android:layout_marginLeft="290dp"
         android:layout_marginTop="300dp"
-        app:srcCompat="@drawable/skippingrope" />
+        app:srcCompat="@drawable/seatedsidebend" />
 
     <Button
-        android:id="@+id/mountainClimbersBtn"
+        android:id="@+id/Day1Step4MeditationChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="405dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="50dp"
-        android:text="4.   Mountain Climbers\n       60 seconds x 5 sets"
+        android:paddingRight="120dp"
+        android:text="4.   Butterfly Pose\n      60 seconds x 5 sets"
         android:textAllCaps="false" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="92dp"
         android:layout_marginLeft="290dp"
-        android:layout_marginTop="370dp"
-        app:srcCompat="@drawable/mountainclimber" />
+        android:layout_marginTop="385dp"
+        app:srcCompat="@drawable/butterflypose" />
 
     <Button
-        android:id="@+id/skaterJumpsBtn"
+        android:id="@+id/Day1Step5MeditationChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="485dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="90dp"
-        android:text="5.   Skater Jumps\n       30 seconds each side x 5 sets"
+        android:paddingRight="140dp"
+        android:text="5.   Corpse Pose\n      60 Seconds - Relax "
         android:textAllCaps="false" />
 
     <ImageView
@@ -120,25 +120,24 @@
         android:layout_height="92dp"
         android:layout_marginLeft="290dp"
         android:layout_marginTop="460dp"
-        app:srcCompat="@drawable/skaterjumps" />
+        app:srcCompat="@drawable/corpsepose" />
 
     <Button
+        android:id="@+id/backtochallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="550dp"
         android:text="Back"
-        android:id="@+id/backBtn"
-        android:layout_centerHorizontal="true"
-        android:textSize="15dp"
-        />
+        android:textSize="15dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click the exercise to start the timer! Once completed move onto the next."
-        android:textStyle="bold"
+        android:layout_marginTop="605dp"
         android:gravity="center_horizontal"
-        android:layout_marginTop="605dp" />
+        android:text="Click the exercise to start the timer! Once completed move onto the next."
+        android:textStyle="italic" />
 
 </RelativeLayout>
 

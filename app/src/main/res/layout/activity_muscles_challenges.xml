@@ -23,56 +23,56 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:background="#fff3eb"
+        android:background="#fef4eb"
         android:text="DAY 1"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="40dp"/>
 
     <Button
         android:id="@+id/Day2MuscleChallengesBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#fff3eb"
+        android:background="#fef4eb"
         android:text="DAY 2"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="15dp"/>
 
     <Button
         android:id="@+id/Day3MuscleChallengesBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="DAY 3"
-        android:background="#fff3eb"
-        android:layout_marginTop="20dp" />
+        android:background="#fef4eb"
+        android:layout_marginTop="15dp" />
 
     <Button
         android:id="@+id/Day4MuscleChallengesBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="DAY 4"
-        android:background="#fff3eb"
-        android:layout_marginTop="20dp" />
+        android:background="#fef4eb"
+        android:layout_marginTop="15dp" />
 
     <Button
         android:id="@+id/Day5MuscleChallengesBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="DAY 5"
-        android:background="#fff3eb"
-        android:layout_marginTop="20dp" />
+        android:background="#fef4eb"
+        android:layout_marginTop="15dp" />
 
     <Button
         android:id="@+id/Day6MuscleChallengesBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="DAY 6"
-        android:background="#fff3eb"
-        android:layout_marginTop="20dp"/>
+        android:background="#fef4eb"
+        android:layout_marginTop="15dp"/>
 
     <Button
         android:id="@+id/Day7MuscleChallengesBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="DAY 7"
-        android:background="#fff3eb"
-        android:layout_marginTop="20dp"/>
+        android:background="#fef4eb"
+        android:layout_marginTop="15dp"/>
 
 </LinearLayout>

@@ -9,11 +9,11 @@
     android:background="@drawable/goals">
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/Day1MuscleChallengesHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Muscle Training"
+        android:text="Muscle Challenge"
         android:textSize="25dp"
         android:textStyle="bold" />
 
@@ -25,7 +25,7 @@
         app:srcCompat="@drawable/buildmuscleheader" />
 
     <TextView
-        android:id="@+id/timer"
+        android:id="@+id/Day1MuscleChallengesTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="300dp"
@@ -33,7 +33,7 @@
         android:textSize="25dp" />
 
     <Button
-        android:id="@+id/LungesBtn"
+        android:id="@+id/Day1Step1MuscleChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
@@ -51,14 +51,14 @@
         app:srcCompat="@drawable/lunges" />
 
     <Button
-        android:id="@+id/SquatsBtn"
+        android:id="@+id/Day1Step2MuscleChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="235dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
         android:paddingRight="120dp"
-        android:text="2.   Squats\n      30 seconds x 5 sets"
+        android:text="2.   Scissor Kicks\n      60 seconds x 5 sets"
         android:textAllCaps="false" />
 
     <ImageView
@@ -66,10 +66,10 @@
         android:layout_height="92dp"
         android:layout_marginLeft="290dp"
         android:layout_marginTop="220dp"
-        app:srcCompat="@drawable/squats" />
+        app:srcCompat="@drawable/scissorkicks" />
 
     <Button
-        android:id="@+id/PlanksBtn"
+        android:id="@+id/Day1Step3MuscleChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="325dp"
@@ -87,14 +87,14 @@
         app:srcCompat="@drawable/planks" />
 
     <Button
-        android:id="@+id/TricepdipBtn"
+        android:id="@+id/Day1Step4MuscleChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="405dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
         android:paddingRight="50dp"
-        android:text="4.   Tricep Dip\n       30 seconds each side x 5 sets"
+        android:text="4.   Obliques\n       30 seconds each side x 5 sets"
         android:textAllCaps="false" />
 
     <ImageView
@@ -102,17 +102,17 @@
         android:layout_height="92dp"
         android:layout_marginLeft="290dp"
         android:layout_marginTop="370dp"
-        app:srcCompat="@drawable/tricepdip" />
+        app:srcCompat="@drawable/oblique" />
 
     <Button
-        android:id="@+id/PushupsBtn"
+        android:id="@+id/Day1Step5MuscleChallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="485dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
         android:paddingRight="110dp"
-        android:text="5.   Push Ups\n       60 seconds x 5 sets"
+        android:text="5.   Glute Bridge\n       60 seconds x 5 sets"
         android:textAllCaps="false" />
 
     <ImageView
@@ -120,25 +120,24 @@
         android:layout_height="92dp"
         android:layout_marginLeft="290dp"
         android:layout_marginTop="460dp"
-        app:srcCompat="@drawable/pushups" />
+        app:srcCompat="@drawable/glutes" />
 
     <Button
+        android:id="@+id/backtochallengesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="550dp"
         android:text="Back"
-        android:id="@+id/backBtn"
-        android:layout_centerHorizontal="true"
-        android:textSize="15dp"
-        />
+        android:textSize="15dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Click the exercise to start the timer! Once completed move onto the next."
-        android:textStyle="bold"
+        android:layout_marginTop="605dp"
         android:gravity="center_horizontal"
-        android:layout_marginTop="605dp" />
+        android:text="Click the exercise to start the timer! Once completed move onto the next."
+        android:textStyle="italic" />
 
 </RelativeLayout>
 

@@ -3,15 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Documents/School Text/Kwantlen/INFO 4290 Project/FitBuddy/app/src/main/res/drawable/bg_l.xml" value="0.1" />
+        <entry key="..\:/Documents/School Text/Kwantlen/INFO 4290 Project/FitBuddy/app/src/main/res/drawable/bg_r.xml" value="0.1" />
         <entry key="..\:/Documents/School Text/Kwantlen/INFO 4290 Project/FitBuddy/app/src/main/res/layout/activity_chat.xml" value="0.33" />
         <entry key="..\:/Documents/School Text/Kwantlen/INFO 4290 Project/FitBuddy/app/src/main/res/layout/activity_choose_goals.xml" value="0.36666666666666664" />
         <entry key="..\:/Documents/School Text/Kwantlen/INFO 4290 Project/FitBuddy/app/src/main/res/layout/activity_logged_in.xml" value="0.36666666666666664" />
         <entry key="..\:/Documents/School Text/Kwantlen/INFO 4290 Project/FitBuddy/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/Documents/School Text/Kwantlen/INFO 4290 Project/FitBuddy/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Documents/School Text/Kwantlen/INFO 4290 Project/FitBuddy/app/src/main/res/layout/activity_monthly_tracker.xml" value="0.36666666666666664" />
+        <entry key="..\:/Documents/School Text/Kwantlen/INFO 4290 Project/FitBuddy/app/src/main/res/layout/activity_msg.xml" value="0.34782608695652173" />
         <entry key="..\:/Documents/School Text/Kwantlen/INFO 4290 Project/FitBuddy/app/src/main/res/layout/activity_register.xml" value="0.36666666666666664" />
         <entry key="..\:/Documents/School Text/Kwantlen/INFO 4290 Project/FitBuddy/app/src/main/res/layout/activity_weekly_tracker.xml" value="0.36666666666666664" />
         <entry key="..\:/Documents/School Text/Kwantlen/INFO 4290 Project/FitBuddy/app/src/main/res/layout/bar_layout.xml" value="0.19972826086956522" />
+        <entry key="..\:/Documents/School Text/Kwantlen/INFO 4290 Project/FitBuddy/app/src/main/res/layout/chat_item_l.xml" value="0.36666666666666664" />
+        <entry key="..\:/Documents/School Text/Kwantlen/INFO 4290 Project/FitBuddy/app/src/main/res/layout/chat_item_r.xml" value="0.33" />
         <entry key="..\:/Documents/School Text/Kwantlen/INFO 4290 Project/FitBuddy/app/src/main/res/layout/fragment_chat.xml" value="0.35260416666666666" />
         <entry key="..\:/Documents/School Text/Kwantlen/INFO 4290 Project/FitBuddy/app/src/main/res/layout/fragment_user.xml" value="0.34782608695652173" />
         <entry key="..\:/Documents/School Text/Kwantlen/INFO 4290 Project/FitBuddy/app/src/main/res/layout/user_item.xml" value="0.266304347826087" />

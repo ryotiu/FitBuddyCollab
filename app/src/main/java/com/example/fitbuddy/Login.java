@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
@@ -109,6 +110,7 @@ public class Login extends AppCompatActivity {
                 @Override
                 public void onFailure(@NonNull Exception e) {
                     Toast.makeText(Login.this, "Failed to Login", Toast.LENGTH_SHORT).show();
+                    //Log.e("Login", e.toString());
                 }
             });
         }

@@ -9,9 +9,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,6 +18,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.example.fitbuddy.Fragments.ChatFragment;
 import com.example.fitbuddy.Fragments.UserFragment;
+import com.example.fitbuddy.Model.UserClass;
 import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -83,7 +82,7 @@ public class Chat extends AppCompatActivity {
 
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         viewPagerAdapter.addFragment(new ChatFragment(), "Chats");
-        viewPagerAdapter.addFragment(new UserFragment(), "Profile");
+        viewPagerAdapter.addFragment(new UserFragment(), "Users");
 
         viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);

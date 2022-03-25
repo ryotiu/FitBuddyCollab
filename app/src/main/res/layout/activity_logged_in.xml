@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:background="@android:color/transparent"
-        android:text="* Disclaimer: Please read carefully \n before attempting any exercises."
+        android:text="@string/disclaimer_please_read_carefully_n_before_attempting_any_exercises"
         android:textAllCaps="false"
         android:textColor="@android:color/holo_red_light"
         android:textStyle="italic"

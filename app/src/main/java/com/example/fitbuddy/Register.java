@@ -16,6 +16,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.fitbuddy.Model.UserClass;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
@@ -136,8 +137,8 @@ public class Register extends AppCompatActivity {
         String rPassword = registerPassWD.getText().toString();
         String rCWeight = currentWeight.getText().toString();
         String rTWeight = targetWeight.getText().toString();
-        String[] splitEmail = rEmail.split("@");
-        String username = splitEmail[0];
+        //String[] splitEmail = rEmail.split("@");
+        //String username = splitEmail[0];
         String imageURL = "default";
 
         //Check if first name, last name, email, password, current weight, target weight field is empty

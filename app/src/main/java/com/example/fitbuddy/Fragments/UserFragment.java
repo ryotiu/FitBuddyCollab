@@ -1,7 +1,5 @@
 package com.example.fitbuddy.Fragments;
 
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -15,7 +13,7 @@ import android.view.ViewGroup;
 
 import com.example.fitbuddy.Adapter.UserAdapter;
 import com.example.fitbuddy.R;
-import com.example.fitbuddy.UserClass;
+import com.example.fitbuddy.Model.UserClass;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -54,15 +52,17 @@ public class UserFragment extends Fragment {
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users");
         reference.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
                 mUsers.clear();
-                for(DataSnapshot snapshot : dataSnapshot.getChildren()){
-                    UserClass user = dataSnapshot.getValue(UserClass.class);
-                    assert user != null;
+                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+                    UserClass userInfo = dataSnapshot.getValue(UserClass.class);
+                    assert userInfo != null;
                     assert firebaseUser != null;
-                    //if(!user.getUsername().equals(firebaseUser)){
-                    //}
-
+                    if(!userInfo.getUserID().equals(firebaseUser.getUid())){
+                        mUsers.add(userInfo);
+                    }
+                    userAdapter = new UserAdapter(getContext(), mUsers);
+                    recyclerView.setAdapter(userAdapter);
                 }
             }
 

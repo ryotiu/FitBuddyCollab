@@ -97,7 +97,7 @@ public class LoggedIn extends AppCompatActivity {
         TrackersBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoggedIn.this, Trackers.class));
+                startActivity(new Intent(LoggedIn.this, Tracker.class));
             }
         });
 

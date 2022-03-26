@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/goals"
+    tools:context=".Tracker">
+
+    <TextView
+        android:id="@+id/MeditationChallengesHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track Your Progress"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:layout_marginLeft="60dp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <CheckBox
+        android:id="@+id/Day1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="160dp"
+        android:text="Day 1" />
+
+    <CheckBox
+        android:id="@+id/Day2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:text="Day 2" />
+
+    <CheckBox
+        android:id="@+id/Day3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:text="Day 3" />
+
+    <CheckBox
+        android:id="@+id/Day4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:text="Day 4" />
+
+    <CheckBox
+        android:id="@+id/Day5"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:text="Day 5" />
+    <CheckBox
+        android:id="@+id/Day6"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:text="Day 6" />
+
+    <CheckBox
+        android:id="@+id/Day7"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:text="Day 7" />
+
+    <Button
+        android:id="@+id/SaveTrackerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="50dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/ResetTrackerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:layout_marginLeft="100dp"
+        android:text="Reset" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="150dp" />
+
+</LinearLayout>

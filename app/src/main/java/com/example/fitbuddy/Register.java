@@ -8,6 +8,7 @@ import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
@@ -228,6 +229,7 @@ public class Register extends AppCompatActivity {
             @Override
             public void onFailure(@NonNull Exception e) {
                 Toast.makeText(Register.this, "Registration Failed", Toast.LENGTH_SHORT).show();
+                Log.e("Registration", e.toString());
 
                 if(e instanceof FirebaseAuthUserCollisionException){
                     //Email Exist in Firebase, display Error

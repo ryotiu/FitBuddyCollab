@@ -110,7 +110,7 @@ public class Login extends AppCompatActivity {
                 @Override
                 public void onFailure(@NonNull Exception e) {
                     Toast.makeText(Login.this, "Failed to Login", Toast.LENGTH_SHORT).show();
-                    //Log.e("Login", e.toString());
+                    Log.e("Login", e.toString());
                 }
             });
         }

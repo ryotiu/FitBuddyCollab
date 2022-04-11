@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="270dp"
         android:inputType="textMultiLine"
         android:text="You should understand that when participating in any exercise or exercise program, there is the possibility of physical injury. If you engage in any exercise program, you agree that you do so at your own risk, and assume all risk of injury to yourself, and agree to release and discharge FitBuddy App Trainer from any and all claims or causes of action, known or unknown, arising out of the exercises shown in the app"
         android:textSize="15sp" />
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="490dp"
+        android:layout_marginTop="440dp"
         android:inputType="textMultiLine"
         android:text="The information provided is not intended to be a substitute for professional medical advice, diagnosis or treatment.  Never disregard professional medical advice, or delay in seeking it, because of something you have read on this App.  Never rely on information on this App in place of seeking professional medical advice."
         android:textSize="15sp" />
@@ -56,7 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="650dp"
+        android:layout_marginTop="550dp"
         android:padding="18dp"
         android:text="I Understand"
         android:textAllCaps="false"

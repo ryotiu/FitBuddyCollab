@@ -39,7 +39,7 @@
         android:layout_marginTop="150dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="50dp"
+        android:paddingRight="45dp"
         android:text="1.   Lunges\n       30 seconds each side x 5 sets"
         android:textAllCaps="false" />
 
@@ -57,7 +57,7 @@
         android:layout_marginTop="235dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="120dp"
+        android:paddingRight="110dp"
         android:text="2.   Squats\n      30 seconds x 5 sets"
         android:textAllCaps="false" />
 
@@ -93,7 +93,7 @@
         android:layout_marginTop="405dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="50dp"
+        android:paddingRight="45dp"
         android:text="4.   Tricep Dip\n       30 seconds each side x 5 sets"
         android:textAllCaps="false" />
 
@@ -123,14 +123,13 @@
         app:srcCompat="@drawable/pushups" />
 
     <Button
+        android:id="@+id/backBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="550dp"
         android:text="Back"
-        android:id="@+id/backBtn"
-        android:layout_centerHorizontal="true"
-        android:textSize="15dp"
-        />
+        android:textSize="15dp" />
 
     <TextView
         android:layout_width="wrap_content"

@@ -17,7 +17,9 @@ public class MeditationChallenges extends AppCompatActivity {
     private Button Day5MeditationChallengesBtn;
     private Button Day6MeditationChallengesBtn;
     private Button Day7MeditationChallengesBtn;
+    private Button backBtn;
     private TextView MeditationChallengesHeader;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,14 @@ public class MeditationChallenges extends AppCompatActivity {
         Day6MeditationChallengesBtn = findViewById(R.id.Day6MeditationChallengesBtn);
         Day7MeditationChallengesBtn = findViewById(R.id.Day7MeditationChallengesBtn);
         MeditationChallengesHeader = findViewById(R.id.MeditationChallengesHeader);
+        backBtn = findViewById(R.id.backBtn);
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MeditationChallenges.this, Challenges.class));
+            }
+        });
 
         // Launch activity_weekly_tracker
         Day1MeditationChallengesBtn.setOnClickListener(new View.OnClickListener() {

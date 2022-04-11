@@ -19,8 +19,8 @@ public class Day1Yoga extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_day1yoga);
 
-        TextView timer = findViewById(R.id.Day1MuscleChallengesTimer);
-        TextView Day1YogaChallengesHeader = findViewById(R.id.Day1MuscleChallengesHeader);
+        TextView timer = findViewById(R.id.Day1YogaChallengesTimer);
+        TextView Day1YogaChallengesHeader = findViewById(R.id.Day1YogaChallengesHeader);
         Button Day1Step1YogaChallengesBtn = findViewById(R.id.Day1Step1YogaChallengesBtn);
         Button Day1Step2YogaChallengesBtn = findViewById(R.id.Day1Step2YogaChallengesBtn);
         Button Day1Step3YogaChallengesBtn = findViewById(R.id.Day1Step3YogaChallengesBtn);

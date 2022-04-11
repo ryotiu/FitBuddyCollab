@@ -75,7 +75,7 @@
         android:layout_marginTop="325dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="110dp"
+        android:paddingRight="115dp"
         android:text="3.   Big Toe Pose\n      60 seconds x 5 sets"
         android:textAllCaps="false" />
 
@@ -92,8 +92,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="405dp"
         android:background="@color/cardview_light_background"
-        android:paddingRight="110dp"
         android:gravity="left|center_vertical"
+        android:paddingRight="110dp"
         android:text="4.   Wheel Pose\n       60 seconds x 5 sets"
         android:textAllCaps="false" />
 
@@ -129,8 +129,7 @@
         android:text="Back"
         android:id="@+id/backBtn"
         android:layout_centerHorizontal="true"
-        android:textSize="15dp"
-        />
+        android:textSize="15dp" />
 
     <TextView
         android:layout_width="wrap_content"

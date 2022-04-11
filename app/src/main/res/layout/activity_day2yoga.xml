@@ -9,7 +9,7 @@
     android:background="@drawable/goals">
 
     <TextView
-        android:id="@+id/Day2YogaChallengestimer"
+        android:id="@+id/Day2YogaChallengesHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -25,7 +25,7 @@
         app:srcCompat="@drawable/yogaheader" />
 
     <TextView
-        android:id="@+id/Day2YogaChallengesHeader"
+        android:id="@+id/Day2YogaChallengestimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="300dp"

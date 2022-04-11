@@ -7,14 +7,6 @@
     android:background="@drawable/goals"
     tools:context=".ChooseGoals">
 
-    <Button
-        android:id="@+id/skipBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:background="@android:color/transparent"
-        android:text="Skip >"
-        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView7"

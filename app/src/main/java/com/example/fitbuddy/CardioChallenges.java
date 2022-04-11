@@ -18,6 +18,7 @@ public class CardioChallenges extends AppCompatActivity {
     private Button Day6CardioChallengesBtn;
     private Button Day7CardioChallengesBtn;
     private TextView CardioChallengesHeader;
+    private Button backBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,14 @@ public class CardioChallenges extends AppCompatActivity {
         Day6CardioChallengesBtn = findViewById(R.id.Day6CardioChallengesBtn);
         Day7CardioChallengesBtn = findViewById(R.id.Day7CardioChallengesBtn);
         CardioChallengesHeader = findViewById(R.id.CardioChallengesHeader);
+        backBtn = findViewById(R.id.backBtn);
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CardioChallenges.this, Challenges.class));
+            }
+        });
 
 
         // Launch activity_weekly_tracker

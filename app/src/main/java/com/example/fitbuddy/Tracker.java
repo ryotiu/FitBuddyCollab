@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -21,7 +21,7 @@ public class Tracker extends AppCompatActivity {
     Button backBtn;
     Button SaveTrackerBtn;
     Button ResetTrackerBtn;
-    CheckBox Day1,Day2,Day3,Day4,Day5,Day6,Day7;
+    RadioButton Day1,Day2,Day3,Day4,Day5,Day6,Day7;
     FirebaseDatabase database;
     DatabaseReference reference;
     ChallengeTracker challengeTracker;

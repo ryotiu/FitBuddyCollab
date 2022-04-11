@@ -21,7 +21,7 @@
     <Button
         android:id="@+id/Day1MuscleChallengesBtn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_centerHorizontal="true"
         android:background="#fef4eb"
         android:text="DAY 1"
@@ -30,7 +30,7 @@
     <Button
         android:id="@+id/Day2MuscleChallengesBtn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:background="#fef4eb"
         android:text="DAY 2"
         android:layout_marginTop="15dp"/>
@@ -38,7 +38,7 @@
     <Button
         android:id="@+id/Day3MuscleChallengesBtn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="DAY 3"
         android:background="#fef4eb"
         android:layout_marginTop="15dp" />
@@ -46,7 +46,7 @@
     <Button
         android:id="@+id/Day4MuscleChallengesBtn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="DAY 4"
         android:background="#fef4eb"
         android:layout_marginTop="15dp" />
@@ -54,7 +54,7 @@
     <Button
         android:id="@+id/Day5MuscleChallengesBtn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="DAY 5"
         android:background="#fef4eb"
         android:layout_marginTop="15dp" />
@@ -62,7 +62,7 @@
     <Button
         android:id="@+id/Day6MuscleChallengesBtn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="DAY 6"
         android:background="#fef4eb"
         android:layout_marginTop="15dp"/>
@@ -70,9 +70,19 @@
     <Button
         android:id="@+id/Day7MuscleChallengesBtn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="DAY 7"
         android:background="#fef4eb"
         android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="160dp"
+        android:text="Back"
+        android:textSize="15dp" />
 
 </LinearLayout>

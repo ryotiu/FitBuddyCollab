@@ -39,7 +39,7 @@
         android:layout_marginTop="150dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="50dp"
+        android:paddingRight="45dp"
         android:text="1.   Cow Face Pose \n       30 seconds each side x 5 sets"
         android:textAllCaps="false" />
 

@@ -18,6 +18,7 @@ public class MuscleChallenges extends AppCompatActivity {
     private Button Day6MuscleChallengesBtn;
     private Button Day7MuscleChallengesBtn;
     private TextView MuscleChallengesHeader;
+    private Button backBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +33,14 @@ public class MuscleChallenges extends AppCompatActivity {
         Day6MuscleChallengesBtn = findViewById(R.id.Day6MuscleChallengesBtn);
         Day7MuscleChallengesBtn = findViewById(R.id.Day7MuscleChallengesBtn);
         MuscleChallengesHeader = findViewById(R.id.MuscleChallengesHeader);
+        backBtn = findViewById(R.id.backBtn);
 
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MuscleChallenges.this, Challenges.class));
+            }
+        });
         // Launch activity_weekly_tracker
         Day1MuscleChallengesBtn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -16,6 +16,8 @@ public class YogaChallenges extends AppCompatActivity {
     private Button Day5YogaChallengesBtn;
     private Button Day6YogaChallengesBtn;
     private Button Day7YogaChallengesBtn;
+    private Button backBtn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +30,14 @@ public class YogaChallenges extends AppCompatActivity {
         Day5YogaChallengesBtn = findViewById(R.id.Day5YogaChallengesBtn);
         Day6YogaChallengesBtn = findViewById(R.id.Day6YogaChallengesBtn);
         Day7YogaChallengesBtn = findViewById(R.id.Day7YogaChallengesBtn);
+        backBtn = findViewById(R.id.backBtn);
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(YogaChallenges.this, Challenges.class));
+            }
+        });
 
 
         // Launch activity_weekly_tracker

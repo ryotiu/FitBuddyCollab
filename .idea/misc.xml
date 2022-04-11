@@ -24,11 +24,11 @@
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_cardio_challenges.xml" value="0.2625" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_challenges.xml" value="0.25" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_chat.xml" value="0.2635416666666667" />
-        <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_choose_goals.xml" value="0.33" />
+        <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_choose_goals.xml" value="0.25" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_day1cardio.xml" value="0.33" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_day1exercise.xml" value="0.2128623188405797" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_day1meditation.xml" value="0.33" />
-        <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_day1muscle.xml" value="0.22" />
+        <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_day1muscle.xml" value="0.33" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_day1yoga.xml" value="0.25" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_day2cardio.xml" value="0.2546875" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_day2exercise.xml" value="0.2128623188405797" />
@@ -48,20 +48,25 @@
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_logged_in.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_login.xml" value="0.17527173913043478" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_main.xml" value="0.14159067882472137" />
+        <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_mainvideo.xml" value="0.1778115501519757" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_meditation_challenges.xml" value="0.2625" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_monthly_challenges.xml" value="0.25" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_monthly_tracker.xml" value="0.14159067882472137" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_monthlycardio_challenges.xml" value="0.2635416666666667" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_monthlymeditation_challenges.xml" value="0.2546875" />
+        <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_msg.xml" value="0.17239583333333333" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_muscle_exercise_class.xml" value="0.25" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_muscles_challenges.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_muscles_exercise_class.xml" value="0.2625" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_mylist.xml" value="0.12537993920972645" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_row.xml" value="0.1778115501519757" />
+        <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_show_video.xml" value="0.26358695652173914" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_tracker.xml" value="0.22" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_trackers.xml" value="0.14159067882472137" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_user_dashboard.xml" value="0.25" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_user_library.xml" value="0.33" />
+        <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_video.xml" value="0.1" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_video_exercise_class.xml" value="0.1582089552238806" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_weekly_challenges.xml" value="0.22" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_weekly_tracker.xml" value="0.14159067882472137" />
@@ -73,6 +78,7 @@
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/activity_yoga_video_class.xml" value="0.1" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/bar_layout.xml" value="0.2635416666666667" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/challenge_card_layout.xml" value="0.14159067882472137" />
+        <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/chat_item_l.xml" value="0.24739583333333334" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/fragment_chat.xml" value="0.2635416666666667" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/fragment_user.xml" value="0.12284701114488349" />
         <entry key="..\:/Users/aashi/StudioProjects/FitBuddyCollab/app/src/main/res/layout/user_item.xml" value="0.12284701114488349" />

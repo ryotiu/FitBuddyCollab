@@ -38,7 +38,7 @@
         android:layout_marginTop="150dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="50dp"
+        android:paddingRight="45dp"
         android:text="1.  Folded Legs - Inhale and Exhale\n      30 seconds x 10 sets"
         android:textAllCaps="false" />
 
@@ -74,7 +74,7 @@
         android:layout_marginTop="325dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="70dp"
+        android:paddingRight="50dp"
         android:text="3.   Seated Side Bend \n      30 seconds each side x 5 sets"
         android:textAllCaps="false" />
 
@@ -111,7 +111,7 @@
         android:layout_marginTop="485dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="140dp"
+        android:paddingRight="120dp"
         android:text="5.   Corpse Pose\n      60 Seconds - Relax "
         android:textAllCaps="false" />
 

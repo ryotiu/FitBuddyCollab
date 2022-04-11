@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="320dp"
-        android:text="60"
+        android:text="10"
         android:textSize="25dp" />
 
     <Button
@@ -39,7 +39,7 @@
         android:layout_marginTop="150dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="50dp"
+        android:paddingRight="45dp"
         android:text="1.  Tip-Toe Jacks\n       30 seconds each side x 5 sets"
         android:textAllCaps="false" />
 
@@ -57,7 +57,7 @@
         android:layout_marginTop="235dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="120dp"
+        android:paddingRight="110dp"
         android:text="2.   Crunches\n      60 seconds x 5 sets"
         android:textAllCaps="false" />
 
@@ -93,7 +93,7 @@
         android:layout_marginTop="405dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="110dp"
+        android:paddingRight="105dp"
         android:text="4.   Mountain Climbers\n       60 seconds x 5 sets"
         android:textAllCaps="false" />
 

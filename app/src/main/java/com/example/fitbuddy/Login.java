@@ -1,13 +1,7 @@
 package com.example.fitbuddy;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
@@ -15,6 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -103,7 +100,7 @@ public class Login extends AppCompatActivity {
                             //editor.putString("Username", username);
                             //editor.apply();
 
-                            Toast.makeText(Login.this, "Successfully Login", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Login.this, "Login Successful!", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(Login.this, LoggedIn.class));
                         }
                     }).addOnFailureListener(new OnFailureListener() {

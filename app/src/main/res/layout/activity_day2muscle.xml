@@ -57,7 +57,7 @@
         android:layout_marginTop="235dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="120dp"
+        android:paddingRight="115dp"
         android:text="2.   Squats\n      30 seconds x 5 sets"
         android:textAllCaps="false" />
 
@@ -75,7 +75,7 @@
         android:layout_marginTop="325dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="110dp"
+        android:paddingRight="115dp"
         android:text="3.   Plank\n      30 seconds x 5 sets"
         android:textAllCaps="false" />
 
@@ -111,7 +111,7 @@
         android:layout_marginTop="485dp"
         android:background="@color/cardview_light_background"
         android:gravity="left|center_vertical"
-        android:paddingRight="110dp"
+        android:paddingRight="115dp"
         android:text="5.   Push Ups\n       60 seconds x 5 sets"
         android:textAllCaps="false" />
 

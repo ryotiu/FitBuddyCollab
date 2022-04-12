@@ -45,13 +45,13 @@ public class loseweightExcerciseClass extends AppCompatActivity {
                 skaterJumps.setEnabled(false);
 
 
-                new CountDownTimer(10000, 1000) {
+                new CountDownTimer(60000, 1000) {
 
                     NumberFormat f = new DecimalFormat("00");
 
                     public void onTick(long millisUntilFinished) {
-                        long min = (millisUntilFinished / 10000) % 10;
-                        long sec = (millisUntilFinished / 1000) % 10;
+                        long min = (millisUntilFinished / 60000) % 60;
+                        long sec = (millisUntilFinished / 1000) % 60;
                         timer.setText(f.format(min) + ":" + f.format(sec));
 
                         // timer.setText(String.valueOf(millisUntilFinished / 1000));
@@ -79,13 +79,13 @@ public class loseweightExcerciseClass extends AppCompatActivity {
                 mountainClimbers.setEnabled(false);
                 tiptoeJacks.setEnabled(false);
 
-                new CountDownTimer(10000, 1000) {
+                new CountDownTimer(60000, 1000) {
 
                     NumberFormat f = new DecimalFormat("00");
 
                     public void onTick(long millisUntilFinished) {
-                        long min = (millisUntilFinished / 10000) % 10;
-                        long sec = (millisUntilFinished / 1000) % 10;
+                        long min = (millisUntilFinished / 60000) % 60;
+                        long sec = (millisUntilFinished / 1000) % 60;
                         timer.setText(f.format(min) + ":" + f.format(sec));
 
                         // timer.setText(String.valueOf(millisUntilFinished / 1000));
@@ -114,13 +114,13 @@ public class loseweightExcerciseClass extends AppCompatActivity {
                 tiptoeJacks.setEnabled(false);
                 Crunches.setEnabled(false);
 
-                new CountDownTimer(10000, 1000) {
+                new CountDownTimer(60000, 1000) {
 
                     NumberFormat f = new DecimalFormat("00");
 
                     public void onTick(long millisUntilFinished) {
-                        long min = (millisUntilFinished / 10000) % 10;
-                        long sec = (millisUntilFinished / 1000) % 10;
+                        long min = (millisUntilFinished / 60000) % 60;
+                        long sec = (millisUntilFinished / 1000) % 60;
                         timer.setText(f.format(min) + ":" + f.format(sec));
 
                         // timer.setText(String.valueOf(millisUntilFinished / 1000));
@@ -148,13 +148,13 @@ public class loseweightExcerciseClass extends AppCompatActivity {
                 tiptoeJacks.setEnabled(false);
                 Crunches.setEnabled(false);
 
-                new CountDownTimer(10000, 1000) {
+                new CountDownTimer(60000, 1000) {
 
                     NumberFormat f = new DecimalFormat("00");
 
                     public void onTick(long millisUntilFinished) {
-                        long min = (millisUntilFinished / 10000) % 10;
-                        long sec = (millisUntilFinished / 1000) % 10;
+                        long min = (millisUntilFinished / 60000) % 60;
+                        long sec = (millisUntilFinished / 1000) % 60;
                         timer.setText(f.format(min) + ":" + f.format(sec));
 
                         // timer.setText(String.valueOf(millisUntilFinished / 1000));
@@ -182,13 +182,13 @@ public class loseweightExcerciseClass extends AppCompatActivity {
                 mountainClimbers.setEnabled(false);
                 Skipping.setEnabled(false);
 
-                new CountDownTimer(10000, 1000) {
+                new CountDownTimer(60000, 1000) {
 
                     NumberFormat f = new DecimalFormat("00");
 
                     public void onTick(long millisUntilFinished) {
-                        long min = (millisUntilFinished / 10000) % 10;
-                        long sec = (millisUntilFinished / 1000) % 10;
+                        long min = (millisUntilFinished / 60000) % 60;
+                        long sec = (millisUntilFinished / 1000) % 60;
                         timer.setText(f.format(min) + ":" + f.format(sec));
 
                         // timer.setText(String.valueOf(millisUntilFinished / 1000));
